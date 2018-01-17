@@ -1,0 +1,1 @@
+alias coloremacs='TERM=xterm-24bits /u/edward/emacsstuff/emacs26bin/emacs-26.0.91 -nw'
