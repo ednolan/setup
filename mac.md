@@ -2,24 +2,18 @@
 
 ## Software
 
-Paid software:
-
----
+**Paid software:**
 
 BetterTouchTool $9, Display Menu $2, Fantastical 2 $49.99, OmniGraffle $99.99, VMWare Fusion $159.99, Weather Live $4.99
 
-Free/gratis software:
-
----
+**Free/gratis software:**
 
 Disk Inventory X, Emacs, FileZilla, Firefox, Flux, GIMP, Gnucash, Google Chrome, Karabiner, MPlayerX, piZZa, Transmission, Tunnelblick
 
 
 ## Application settings
 
-iTerm2
-
----
+**iTerm2**
 
 Appearance: Light Theme
 
@@ -39,23 +33,17 @@ Keys: Key mappings:
 
 ## System Preferences
 
-Mission Control
-
----
+**Mission Control**
 
 Untick "Automatically rearrange Spaces based on most recent use"
 
-Security and Privacy
-
----
+**Security and Privacy**
 
 Enable accessibility controls for the following:
 
 BetterTouchTool, iTerm, witchdaemon.app
 
-Keyboard
-
----
+**Keyboard**
 
 Shortcuts:
 
@@ -71,9 +59,7 @@ App Shortcuts:
 
 > Chrome: Open Location... -> F6
 
-Users and Groups
-
----
+**Users and Groups**
 
 Login Items:
 
