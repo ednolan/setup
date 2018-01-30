@@ -19,13 +19,19 @@ iTerm2
 ---
 
 Appearance: Light Theme
+
 Profiles: Colors: Terminal Basic (download theme from https://github.com/mbadolato/iterm2-Color-Schemes)
+
 Terminal: Report Terminal Type: xterm-256color
+
 Keys: Left option key acts as +Esc, Right option key acts as +Esc
+
 Keys: Key mappings:
 
 > Control Shift C -> Do Not Remap Modifiers
+
 > Control Shift V -> Paste
+
 > Control ` -> Send Hex Codes: 0x00
 
 ## System Preferences
@@ -52,8 +58,11 @@ Shortcuts:
 App Shortcuts:
 
 > Safari: Quit -> Option Command Q
+
 > Chrome: Quit Google Chrome -> Option Command Q
+
 > Chrome: Reload This Page -> F5
+
 > Chrome: Open Location... -> F6
 
 Users and Groups
