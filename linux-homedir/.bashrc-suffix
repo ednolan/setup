@@ -1,0 +1,7 @@
+
+export GOPATH=$HOME/sync/go
+export PATH=$PATH:~/.emacs.d/rtags/bin/
+
+export PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\]@\h\[\033[0:32m\]:\w\[\033[0;32m\] - [$(git branch 2>/dev/null | grep "^*" | colrm 1 2)\[\033[0;32m\]]\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\]\[\033[0m\] '
+
+alias coloremacs="TERM=xterm-24bits /home/eddie/emacsstuff/emacs26bin/bin/emacs-26.0.91 -nw"
