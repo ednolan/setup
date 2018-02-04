@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Usage: ./setup-user
+
+# Modern mint theme
+wget -O '/home/eddie/Downloads/Modern-Mint.zip' 'https://dl.opendesktop.org/api/files/download/id/1464717637/174945-Modern%20Mint.zip'
+unzip '/home/eddie/Downloads/Modern-Mint.zip' -d '/home/eddie/.themes/'
+
+# SSH and git
+ssh-keygen -t rsa -C 'eddiejnolan@gmail.com'
+git config --global user.name 'Edward Nolan'
+git config --global user.email 'eddiejnolan@gmail.com'
+
+# C++
+pip install pygments
+
+# Go
+touch ~/.bashrc
+echo "export GOPATH=$HOME/sync/go" >> ~/.bashrc
+
+# Opam
+yes | opam init
+opam switch 4.03.0
+
+# Semio
+opam install menhir ppx_sexp_conv ppx_compare ppx_custom_printf ppx_enumerate core ocamlgraph jbuilder
