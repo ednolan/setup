@@ -31,6 +31,8 @@ Keys: Key mappings:
 
 > Control ` -> Send Hex Codes: 0x00
 
+Make sure that there are no Option <arrow key> mappings.
+
 ## System Preferences
 
 **Mission Control**
