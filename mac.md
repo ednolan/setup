@@ -19,7 +19,7 @@ Appearance: Light Theme
 
 Profiles: Colors: Terminal Basic (download theme from https://github.com/mbadolato/iterm2-Color-Schemes)
 
-Terminal: Report Terminal Type: xterm-256color
+Profiles: Terminal: Report Terminal Type: xterm-256color, Silence Bell
 
 Keys: Left option key acts as +Esc, Right option key acts as +Esc
 
