@@ -4,6 +4,9 @@ alias ll="ls -lhA"
 # New emacs with colors etc
 alias coloremacs="TERM=xterm-24bits /u/edward/emacsstuff/emacs26bin/emacs-26.0.91 -nw"
 
+# This ulimit command is annoying
+alias coredumps="ulimit -S -c unlimited"
+
 # From github.com/jez/dotfiles
 # so much easier to type than `cd ..`
 alias cdd="cd .."
