@@ -4,8 +4,6 @@ export PATH=$PATH:~/.emacs.d/rtags/bin/
 
 source /home/eddie/sync/setup/bash-powerline/bash-powerline.sh
 
-alias coloremacs="TERM=xterm-24bits /home/eddie/emacsstuff/emacs26bin/bin/emacs-26.0.91 -nw"
-
 declare aliases_script="/home/eddie/util/aliases.sh"
 if [ -f $aliases_script ]; then
     . $aliases_script
