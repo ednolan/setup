@@ -1,0 +1,8 @@
+[user]
+	name = Edward Nolan
+	email = eddiejnolan@gmail.com
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
