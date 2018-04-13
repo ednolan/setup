@@ -15,3 +15,13 @@ alias cdddd="cd ../../.."
 alias cddddd="cd ../../../.."
 alias cdddddd="cd ../../../../.."
 alias cddddddd="cd ../../../../../.."
+
+# Waf
+alias waf='/u/edward/mbe-workspace/mbe-tools/bde-tools/bin/waf'
+
+# MT ssh-agent thing
+function mtsshagent {
+    eval `ssh-agent -s`
+    ssh-add
+    ssh-add $HOME/.ssh/gitlab
+}
