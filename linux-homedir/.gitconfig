@@ -6,3 +6,7 @@
     ci = commit
     st = status
     br = branch
+    cv = commit -v
+    cav = commit -av
+    com = checkout master
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
