@@ -20,7 +20,7 @@ echo "export GOPATH=$HOME/sync/go" >> ~/.bashrc
 
 # Opam
 yes | opam init
-opam switch 4.03.0
+opam switch 4.06.1
 
 # Semio
 opam install menhir ppx_sexp_conv ppx_compare ppx_custom_printf ppx_enumerate core ocamlgraph jbuilder
