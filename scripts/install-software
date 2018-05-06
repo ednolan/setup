@@ -40,6 +40,9 @@ apt install -y gitk
 # Go
 apt install -y golang-go
 
+# Meson
+apt install -y meson
+
 # Mongodb
 apt install -y mongodb
 

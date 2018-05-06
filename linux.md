@@ -6,6 +6,8 @@ Install tmux plugin manager by running:
 
 Disable all shortcuts other than shift-ctrl-c and shift-ctrl-v for copy/paste in gnome-terminal (Preferences -> Shortcuts)
 
+In gnome-terminal, unset "Enable the menu accelerator key" to disable the F10 shortcut
+
 Configure cinnamon-menu activation shortcut to ctrl-space only
 
 Edit keyboard map as described: https://askubuntu.com/a/766216 to swap cmd and ctrl
