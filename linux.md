@@ -38,15 +38,21 @@ Calendar: Use a Custom Date Format -> On, Date Format -> `%I:%M:%S %p`
 
 Backgrounds -> set to ~/sync/wallpapers/adwaita-lock.jpg
 
-TODO: explain how to bring these fonts in
+Copy fonts in; reload font cache with `fc-cache -f -v`
+
 Fonts -> Default Font -> Helvetica Neue Regular 10
+
 Fonts -> Document Font -> Helvetica Neue Regular 11
+
 Fonts -> Monospace Font -> Menlo Regular 11
+
 Fonts -> Window Title Font -> Helvetica Neue Book 10
 
 Keyboard -> Shortcuts -> Windows -> Tiling and Snapping, assign "Push tile up/down/left/right" to Alt+Super+Up/Down/Left/Right
 
 Keyboard -> Shortcuts -> Workspace -> Direct Navigation, assign Alt + 1/2/3/4 to Switch to workspace 1/2/3/4
+
+Screensaver -> Settings -> Delay before Starting to Never
 
 Themes -> Desktop -> Modern Mint Light
 

@@ -29,7 +29,7 @@ apt install -y pioneers
 ## Programming languages/tools
 
 # C++
-apt install -y clang libclang-dev exuberant-ctags libgflags-dev libboost-all-dev
+apt install -y clang libclang-dev libgflags-dev libboost-all-dev
 
 # CMake
 apt install -y cmake
