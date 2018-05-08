@@ -1,5 +1,27 @@
 WIP
 
+# Bootstrapping
+
+Enable ssh
+
+`sudo apt -y install openssh-server`
+
+`mkdir sync` and populate it from other machine's folder with `bash-scripts/synchronize-dir`
+
+Install software
+
+`sudo ~/sync/setup/scripts/install-software`
+
+Log out & log in in cinnamon
+
+Applying cinnamon settings:
+
+Themes -> Desktop -> Modern Mint Light
+
+Themes -> Window Border -> Adwaita-X-light
+
+# General Notes
+
 Install tmux plugin manager by running:
 
 `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
