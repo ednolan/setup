@@ -2,7 +2,7 @@
 alias ll="ls -lhA"
 
 # New emacs with colors etc
-alias coloremacs="TERM=xterm-24bits /home/eddie/emacsstuff/emacs26bin/bin/emacs-26.1 -nw"
+alias coloremacs="TERM=xterm-24bits /home/eddie/emacsstuff/emacs26bin/bin/emacs -nw"
 
 # This ulimit command is annoying
 alias coredumps="ulimit -S -c unlimited"
