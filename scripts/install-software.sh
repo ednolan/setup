@@ -17,9 +17,6 @@ apt install -y adwaita-icon-theme adwaita-icon-theme-full
 # Audio
 apt install -y audacity pianobooster
 
-# Development
-apt install -y git emacs
-
 # Utilities
 apt install -y curl gnome-tweak-tool htop k4dirstat network-manager-openvpn-gnome openssh-server openvpn systemd-coredump tree xclip xsel
 
@@ -35,7 +32,11 @@ apt install -y clang libclang-dev libgflags-dev libboost-all-dev
 apt install -y cmake
 
 # Git
-apt install -y gitk
+
+# new git for 16.04
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
 
 # Go
 apt install -y golang-go
