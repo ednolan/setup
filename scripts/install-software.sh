@@ -21,7 +21,7 @@ apt install -y audacity pianobooster
 apt install -y git emacs
 
 # Utilities
-apt install -y gnome-tweak-tool htop k4dirstat network-manager-openvpn-gnome openssh-server openvpn systemd-coredump tmux tree xclip xsel
+apt install -y curl gnome-tweak-tool htop k4dirstat network-manager-openvpn-gnome openssh-server openvpn systemd-coredump tree xclip xsel
 
 # Video games
 apt install -y pioneers
@@ -55,9 +55,6 @@ apt install -y opam m4
 
 # Python
 apt install -y python-pip python3-tk
-
-# Rust
-apt install -y rustc cargo
 
 # Tex
 apt install -y texlive latexmk texlive-xetex
