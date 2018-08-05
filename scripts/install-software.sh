@@ -44,9 +44,6 @@ apt install -y golang-go
 # Meson
 apt install -y meson
 
-# Mongodb
-apt install -y mongodb
-
 # Node.js
 curl -sL https://deb.nodesource.com/setup_8.x | bash -
 apt install -y nodejs
