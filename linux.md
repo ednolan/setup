@@ -30,7 +30,7 @@ Panel applet settings:
 
 cinnamon-menu activation shortcut to ctrl-space only
 
-Panel Launchers: Files, Google Chrome, Terminal
+Panel Launchers: Files, Google Chrome, Alacritty
 
 Workspace Switcher: Type of Display -> Simple Buttons
 

@@ -21,3 +21,5 @@ sh autogen.sh
 ./configure --prefix=/home/eddie/tmuxstuff/tmux
 
 make && make install
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

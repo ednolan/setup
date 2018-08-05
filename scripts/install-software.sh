@@ -35,8 +35,8 @@ apt install -y cmake
 
 # new git for 16.04
 sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get update
-sudo apt-get install git
+sudo apt update
+sudo apt install -y git
 
 # Go
 apt install -y golang-go
@@ -48,8 +48,8 @@ apt install -y meson
 apt install -y mongodb
 
 # Node.js
-curl -sL https://deb.nodesource.com/setup_7.x | bash -
-apt-get install -y nodejs
+curl -sL https://deb.nodesource.com/setup_8.x | bash -
+apt install -y nodejs
 
 # OCaml
 apt install -y opam m4

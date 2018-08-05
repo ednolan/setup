@@ -5,6 +5,7 @@ export PATH=$PATH:~/.emacs.d/rtags/bin/
 export PATH=$PATH:~/emacsstuff/emacs26bin/bin/
 export PATH=$PATH:~/alacrittystuff/alacritty/target/release/
 export PATH=$PATH:~/tmuxstuff/tmux/bin/
+export PATH=$PATH:~/swiftstuff/swift-4.1.1-RELEASE-ubuntu16.04/usr/bin
 
 source /home/eddie/sync/setup/bash-powerline/bash-powerline.sh
 
