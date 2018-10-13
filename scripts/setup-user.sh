@@ -21,4 +21,4 @@ opam switch 4.06.1
 eval `opam config env`
 
 # Semio
-opam install menhir ppx_sexp_conv ppx_compare ppx_custom_printf ppx_enumerate core ocamlgraph jbuilder
+opam install tuareg ocp-indent menhir ppx_sexp_conv ppx_compare ppx_custom_printf ppx_enumerate core ocamlgraph dune
