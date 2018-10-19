@@ -1,0 +1,3 @@
+-I /usr/local/include
+-I /usr/include
+--data-dir=/tmp/edward_rtags_cache
