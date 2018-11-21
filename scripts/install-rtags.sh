@@ -8,3 +8,4 @@ git clone --recursive https://github.com/Andersbakken/rtags.git
 cd rtags
 cmake -DCMAKE_INSTALL_PREFIX=~/rtagsstuff .
 make
+make install
