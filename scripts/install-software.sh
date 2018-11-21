@@ -31,6 +31,9 @@ apt install -y clang libclang-dev libgflags-dev libboost-all-dev
 # CMake
 apt install -y cmake
 
+# rtags
+apt install -y bear
+
 # Git
 
 # new git for 16.04

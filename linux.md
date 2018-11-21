@@ -60,6 +60,8 @@ Themes -> Window Border -> Adwaita-X-light
 
 Themes -> Icons -> Adwaita
 
+Effects -> Window Effects -> Off
+
 # General Notes
 
 Install tmux plugin manager by running:
