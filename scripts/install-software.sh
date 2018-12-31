@@ -52,7 +52,7 @@ curl -sL https://deb.nodesource.com/setup_8.x | bash -
 apt install -y nodejs
 
 # OCaml
-apt install -y opam m4
+apt install -y opam m4 bubblewrap
 
 # Python
 apt install -y python-pip python3-tk
