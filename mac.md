@@ -66,3 +66,10 @@ App Shortcuts:
 Login Items:
 
 > BetterTouchTool, Weather Live, witchdaemon, Flux
+
+## Other Settings
+
+**Screenshot Preferences**
+
+> Command Shift 5 -> Options -> Untick Show Floating Thumbnail
+> Command Shift 5 -> Options -> Save screenshots to Documents/Screenshots directory
