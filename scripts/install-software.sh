@@ -18,7 +18,7 @@ apt install -y adwaita-icon-theme adwaita-icon-theme-full
 apt install -y audacity pianobooster
 
 # Utilities
-apt install -y curl gnome-tweak-tool htop k4dirstat network-manager-openvpn-gnome openssh-server openvpn systemd-coredump tree xclip xsel
+apt install -y curl gnome-tweak-tool gparted htop k4dirstat network-manager-openvpn-gnome openssh-server openvpn systemd-coredump tree xclip xsel
 
 # Video games
 apt install -y pioneers
