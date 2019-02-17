@@ -8,11 +8,25 @@ Enable ssh
 
 `mkdir sync` and populate it from other machine's folder with `bash-scripts/synchronize-dir`
 
-Install software
+Run `install-software` script
 
-`sudo ~/sync/setup/scripts/install-software`
+Run `setup-user` script
+
+Add ssh keys to git hosting services
 
 Log out & log in in cinnamon
+
+Download these themes and unzip to .themes dir:
+
+`mkdir -p .themes`
+
+`https://www.cinnamon-look.org/p/1012732/`
+
+`https://www.opendesktop.org/p/1013736`
+
+`unzip ~/Downloads/150905-adwaita-x-dark-light-1.3.zip -d ~/.themes`
+
+`unzip '~/Downloads/174945-Modern Mint.zip' -d ~/.themes`
 
 ## Cinnamon Preferences:
 
@@ -30,7 +44,7 @@ Panel applet settings:
 
 cinnamon-menu activation shortcut to ctrl-space only
 
-Panel Launchers: Files, Google Chrome, Alacritty
+Panel Launchers: Files, Google Chrome, Gnome Terminal
 
 Workspace Switcher: Type of Display -> Simple Buttons
 
@@ -73,3 +87,5 @@ Disable all shortcuts other than shift-ctrl-c and shift-ctrl-v for copy/paste in
 In gnome-terminal, unset "Enable the menu accelerator key" to disable the F10 shortcut
 
 Edit keyboard map as described: https://askubuntu.com/a/766216 to swap cmd and ctrl
+
+Alternatively use Keyboard -> Layouts -> Options -> Alt/Win key behavior to rearrange the modifier keys (option for a Windows keyboard is "Ctrl is mapped to Alt; Alt is mapped to Win"

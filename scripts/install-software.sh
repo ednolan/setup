@@ -17,6 +17,14 @@ apt install -y adwaita-icon-theme adwaita-icon-theme-full
 # Audio
 apt install -y audacity pianobooster
 
+# Browsers
+
+# Add ppa for chrome and install it
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
+apt update
+apt install -y google-chrome-stable
+
 # Utilities
 apt install -y curl gnome-tweak-tool gparted htop k4dirstat network-manager-openvpn-gnome openssh-server openvpn systemd-coredump tree xclip xsel
 
