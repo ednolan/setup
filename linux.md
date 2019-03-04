@@ -89,3 +89,9 @@ In gnome-terminal, unset "Enable the menu accelerator key" to disable the F10 sh
 Edit keyboard map as described: https://askubuntu.com/a/766216 to swap cmd and ctrl
 
 Alternatively use Keyboard -> Layouts -> Options -> Alt/Win key behavior to rearrange the modifier keys (option for a Windows keyboard is "Ctrl is mapped to Alt; Alt is mapped to Win"
+
+# Hibernation
+
+Find UUID of swap partition and append it to the `GRUB_CMDLINE_LINUX_DEFAULT` param in `/etc/default/grub` as `resume=UUID=your-uuid-here` and then run `sudo update-grub`
+
+Add hibernate option to power menu with this guide: http://ubuntuhandbook.org/index.php/2018/05/add-hibernate-option-ubuntu-18-04/
