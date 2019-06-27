@@ -4,11 +4,11 @@
 
 **Paid software:**
 
-BetterTouchTool $9, Display Menu $2, Fantastical 2 $49.99, OmniGraffle $99.99, VMWare Fusion $159.99, Weather Live $4.99
+BetterTouchTool, Display Menu, Fantastical 2, OmniGraffle, VMWare Fusion
 
 **Free/gratis software:**
 
-Disk Inventory X, Emacs, FileZilla, Firefox, Flux, GIMP, Gnucash, Google Chrome, Karabiner, MPlayerX, piZZa, Transmission, Tunnelblick
+Disk Inventory X, Emacs, FileZilla, Flux, GIMP, MPlayerX, piZZa, Transmission, Tunnelblick
 
 
 ## Application settings
@@ -19,11 +19,17 @@ Appearance: Light Theme
 
 Profiles: Colors: Terminal Basic (download theme from https://github.com/mbadolato/iterm2-Color-Schemes)
 
+Profiles: Text:
+
+> Font: SF Mono Light (size 13 laptop, size 16 desktop)
+
+> Install fonts from /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/
+
 Profiles: Terminal: Report Terminal Type: xterm-256color, Silence Bell
 
-Keys: Left option key acts as +Esc, Right option key acts as +Esc
+Profiles: Keys: Left option key acts as +Esc, Right option key acts as +Esc
 
-Keys: Key mappings:
+Profiles: Keys: Key mappings:
 
 > Control Shift C -> Do Not Remap Modifiers
 
@@ -32,6 +38,8 @@ Keys: Key mappings:
 > Control ` -> Send Hex Codes: 0x00
 
 Make sure that there are no Option <arrow key> mappings.
+
+Profiles: Keys: Remap Modifiers: Swap command and control
 
 ## System Preferences
 
@@ -72,4 +80,5 @@ Login Items:
 **Screenshot Preferences**
 
 > Command Shift 5 -> Options -> Untick Show Floating Thumbnail
+
 > Command Shift 5 -> Options -> Save screenshots to Documents/Screenshots directory
