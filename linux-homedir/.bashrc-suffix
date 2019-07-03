@@ -4,6 +4,7 @@ export GOPATH=$HOME/sync/go
 export PATH=$PATH:~/rtagsstuff/bin
 export PATH=$PATH:~/emacsstuff/bin/
 export PATH=$PATH:~/tmuxstuff/tmux/bin/
+export PATH=$PATH:~/.cabal/bin/
 export PATH=$PATH:~/swiftstuff/swift-5.0.1-RELEASE-ubuntu18.04/usr/bin
 
 source /home/eddie/sync/setup/bash-powerline/bash-powerline.sh
