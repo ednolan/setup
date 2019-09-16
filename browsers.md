@@ -1,3 +1,3 @@
-google chrome: super auto refresh, session buddy
+google chrome: super auto refresh, session buddy, ace jump, rearrange tabs
 firefox: tab session manager
 chrome: sessionrestore
