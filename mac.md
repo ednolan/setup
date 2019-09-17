@@ -8,8 +8,7 @@ BetterTouchTool, Display Menu, Fantastical 2, OmniGraffle, VMWare Fusion
 
 **Free/gratis software:**
 
-Disk Inventory X, Emacs, FileZilla, Flux, GIMP, MPlayerX, piZZa, Transmission, Tunnelblick
-
+Discovery DNS-SD Browser, Disk Inventory X, Emacs, FileZilla, Flux, GIMP, MPlayerX, piZZa, Transmission, Tunnelblick
 
 ## Application settings
 
