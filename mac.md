@@ -26,6 +26,8 @@ Profiles: Text:
 
 Profiles: Terminal: Report Terminal Type: xterm-256color, Silence Bell
 
+Profiles: Terminal: Notifications: untick Notification Center Alerts
+
 Profiles: Keys: Left option key acts as +Esc, Right option key acts as +Esc
 
 Profiles: Keys: Key mappings:
