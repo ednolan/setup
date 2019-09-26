@@ -42,6 +42,18 @@ Make sure that there are no Option <arrow key> mappings.
 
 Profiles: Keys: Remap Modifiers: Swap command and control
 
+**BetterTouchTool**
+
+Standard Settings -> BTT Remote -> Untick "Enable BTT Remote Support"
+
+Map these keyboard shortcuts:
+
+Option Command Up -> Maximize Window
+
+Option Command Left -> Maximize Window Left
+
+Option Command Right -> Maximize Window Right
+
 ## System Preferences
 
 **Mission Control**
