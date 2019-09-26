@@ -62,7 +62,7 @@ Fonts -> Monospace Font -> Menlo Regular 11
 
 Fonts -> Window Title Font -> Helvetica Neue Book 10
 
-Keyboard -> Shortcuts -> Windows -> Tiling and Snapping, assign "Push tile up/down/left/right" to Alt+Super+Up/Down/Left/Right
+Keyboard -> Shortcuts -> Windows -> Tiling and Snapping, assign "Push tile up/down/left/right" to Ctrl+Alt+Up/Down/Left/Right
 
 Keyboard -> Shortcuts -> Workspace -> Direct Navigation, assign Alt + 1/2/3/4 to Switch to workspace 1/2/3/4
 
