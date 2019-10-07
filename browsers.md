@@ -1,6 +1,6 @@
 google chrome: super auto refresh, session buddy, ace jump, rearrange tabs
 
-firefox: tab session manager, saka key
+firefox: tab session manager, saka key, Ctrl+Number to switch tabs, tab numbering
 
 saka key settings:
 
