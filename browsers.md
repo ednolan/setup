@@ -4,6 +4,8 @@ firefox: tab session manager, saka key, Ctrl+Number to switch tabs, tab numberin
 
 saka key settings:
 
+- smooth scroll: off
+
 - create new keybinding profile
 
 - hint characters: ajskdlgheworuvncm
@@ -13,5 +15,9 @@ saka key settings:
 - next tab: shift-ctrl-]
 
 - previous tab: shift-ctrl-[
+
+- scroll half page down: alt-j
+
+- scroll half page up: alt-k
 
 safari: sessionrestore
