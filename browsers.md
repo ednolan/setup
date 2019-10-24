@@ -12,9 +12,9 @@ saka key settings:
 
 - open link: ctrl-j
 
-- next tab: shift-ctrl-]
+- (linux only) next tab: shift-ctrl-]
 
-- previous tab: shift-ctrl-[
+- (linux only) previous tab: shift-ctrl-[
 
 - scroll half page down: alt-j
 
