@@ -99,3 +99,10 @@ Alternatively use Keyboard -> Layouts -> Options -> Alt/Win key behavior to rear
 Find UUID of swap partition and append it to the `GRUB_CMDLINE_LINUX_DEFAULT` param in `/etc/default/grub` as `resume=UUID=your-uuid-here` and then run `sudo update-grub`
 
 Add hibernate option to power menu with this guide: http://ubuntuhandbook.org/index.php/2018/05/add-hibernate-option-ubuntu-18-04/
+
+# fortune | cowsay
+
+Install the following /etc/profile.d/motd.sh:
+
+```#!/bin/bash
+/usr/bin/fortune | /usr/bin/cowsay```

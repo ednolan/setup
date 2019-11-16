@@ -1,0 +1,41 @@
+export EDITOR="nano"
+
+☣export GOPATH=$HOME/sync/go
+export PATH=$PATH:~/.cabal/bin/
+export PATH=$PATH:~/swiftstuff/swift-5.0.1-RELEASE-ubuntu18.04/usr/bin
+export PATH=$PATH:~/tmuxstuff/tmux/bin/
+☣💾export PATH=$PATH:~/emacsstuff/bin/
+☣🍎💠export PATH=$PATH:~/rtagsstuff/bin
+💠export PATH=$PATH:/n/mana/bin
+export PATH=/u/edward/mbe-workspace/build/release/sim/dist_slob/bin:$PATH
+export PATH=/u/edward/mbe-workspace/build/release/sriracha/dist/bin:$PATH
+
+*️⃣export COLOR_RESET=$(echo -en "\x1b[0m\n") \
+export COLOR_CWD=$(printf '\[\x1b[38;2;0;0;255m\]')
+export COLOR_GIT=$(printf '\[\x1b[38;2;0;102;255m\]')
+export COLOR_SUCCESS=$(printf '\[\x1b[38;2;3;106;7m\]')
+export COLOR_FAILURE=$(printf '\[\x1b[38;2;197;6;11m\]')
+export SYMBOL_GIT_BRANCH='→'
+☣💾source /home/eddie/sync/setup/bash-powerline/bash-powerline.sh
+🍎source /Users/eddie/sync/setup/bash-powerline/bash-powerline.sh
+💠source /u/edward/edwards-stuff/setup/bash-powerline/bash-powerline.sh
+
+🍎case "$-" in
+    *i*) fortune | cowsay ;; # interactive shell
+esac
+
+💠# SGE
+if [[ -f /opt/sge/default/common/settings.sh ]] ; then
+    source /opt/sge/default/common/settings.sh
+fi
+
+# Spack
+if [[ -f /u/mdev/spack/share/spack/setup-env.sh
+    && -f /u/mdev/spack/share/spack/spack-completion.bash ]] ; then
+    source /u/mdev/spack/share/spack/setup-env.sh
+    source /u/mdev/spack/share/spack/spack-completion.bash
+fi
+
+*️⃣if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
