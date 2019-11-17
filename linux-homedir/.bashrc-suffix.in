@@ -36,6 +36,6 @@ if [[ -f /u/mdev/spack/share/spack/setup-env.sh
     source /u/mdev/spack/share/spack/spack-completion.bash
 fi
 
-*️⃣if [ -f ~/.bash_aliases ]; then
+🍎💠💾if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
