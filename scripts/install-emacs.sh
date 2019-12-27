@@ -5,9 +5,9 @@ set -ex
 # yum -y install gnutls-dev
 mkdir -p ~/emacsstuff
 cd ~/emacsstuff
-wget http://ftp.gnu.org/gnu/emacs/emacs-26.2.tar.xz
-tar xf emacs-26.2.tar.xz
-cd emacs-26.2
+wget http://ftp.gnu.org/gnu/emacs/emacs-26.3.tar.xz
+tar xf emacs-26.3.tar.xz
+cd emacs-26.3
 ./configure --prefix ~/emacsstuff
-make
+make -j4
 make install
