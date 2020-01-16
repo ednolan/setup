@@ -14,6 +14,8 @@ Discovery DNS-SD Browser, Disk Inventory X, Emacs, FileZilla, Flux, GIMP, MPlaye
 
 **iTerm2**
 
+General: Magic: Advanced GPU Settings: Untick "Maximize throughput"
+
 Appearance: Light Theme
 
 Profiles: Colors: Terminal Basic (download theme from https://github.com/mbadolato/iterm2-Color-Schemes)
@@ -23,6 +25,8 @@ Profiles: Text:
 > Font: SF Mono Light (size 13 laptop, size 16 desktop)
 
 > Install fonts from /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/
+
+Profiles: Terminal: Scrollback Lines: 50000; untick "Unlimited Scrollback"
 
 Profiles: Terminal: Report Terminal Type: xterm-256color, Silence Bell
 
@@ -64,13 +68,13 @@ Untick "Automatically rearrange Spaces based on most recent use"
 
 Enable accessibility controls for the following:
 
-BetterTouchTool, iTerm, witchdaemon.app
+BetterTouchTool, iTerm
 
 **Keyboard**
 
 Shortcuts:
 
-> Mission Control: Alt-1,2,3,4 to Switch to Desktop 1,2,3,4 (these desktops must exist to create these shortcuts)
+> Mission Control: Alt-1,2,3,4,5,6 to Switch to Desktop 1,2,3,4,5,6 (these desktops must exist to create these shortcuts)
 
 App Shortcuts:
 
@@ -86,7 +90,7 @@ App Shortcuts:
 
 Login Items:
 
-> BetterTouchTool, Weather Live, witchdaemon, Flux
+> BetterTouchTool, Flux
 
 ## Other Settings
 
@@ -95,3 +99,9 @@ Login Items:
 > Command Shift 5 -> Options -> Untick Show Floating Thumbnail
 
 > Command Shift 5 -> Options -> Save screenshots to Documents/Screenshots directory
+
+**Screensaver**
+
+Download/install XScreensaver
+
+Follow instructions here to make a screensaver keyboard shortcut: http://osxdaily.com/2014/07/10/set-screen-saver-keyboard-shortcut-mac/
