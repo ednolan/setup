@@ -58,6 +58,8 @@ Option Command Left -> Maximize Window Left
 
 Option Command Right -> Maximize Window Right
 
+Control Command S -> Start Screen Saver
+
 ## System Preferences
 
 **Mission Control**
@@ -100,8 +102,20 @@ Login Items:
 
 > Command Shift 5 -> Options -> Save screenshots to Documents/Screenshots directory
 
-**Screensaver**
+**Screen Saver**
 
 Download/install XScreensaver
 
-Follow instructions here to make a screensaver keyboard shortcut: http://osxdaily.com/2014/07/10/set-screen-saver-keyboard-shortcut-mac/
+Screen Saver preferences:
+
+Screen Saver: Surfaces
+
+Frame Rate: Medium
+
+Duration: four ticks away from Long
+
+Surface: Pluecker's Conoid
+
+Display Mode: Random
+
+Untick "Wander", "Spin", "Show Frame Rate"
