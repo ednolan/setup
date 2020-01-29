@@ -9,5 +9,5 @@ wget http://ftp.gnu.org/gnu/emacs/emacs-26.3.tar.xz
 tar xf emacs-26.3.tar.xz
 cd emacs-26.3
 ./configure --prefix ~/emacsstuff
-make -j4
+make -j$(nproc)
 make install

@@ -7,5 +7,5 @@ cd ~/rtagsstuff
 git clone --recursive https://github.com/Andersbakken/rtags.git
 cd rtags
 cmake -DCMAKE_INSTALL_PREFIX=~/rtagsstuff .
-make -j15
+make -j$(nproc)
 make install

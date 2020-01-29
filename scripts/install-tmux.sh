@@ -14,12 +14,12 @@ git clone https://github.com/tmux/tmux.git ~/tmuxstuff/tmux
 
 cd ~/tmuxstuff/tmux
 
-git checkout 2.7
+git checkout 3.0a
 
 sh autogen.sh
 
-./configure --prefix=/home/eddie/tmuxstuff/tmux
+./configure --prefix=$(realpath ~/tmuxstuff/tmux)
 
-make && make install
+make -j$(nproc) && make install
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

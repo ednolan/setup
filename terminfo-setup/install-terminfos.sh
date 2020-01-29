@@ -1,2 +1,2 @@
 #!/bin/bash
-tic -x -o ~/.terminfo ~/sync/setup/terminfo-setup/xterm-24bits.src
+tic -x -o ~/.terminfo $(dirname $BASH_SOURCE)/xterm-24bits.src

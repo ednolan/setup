@@ -104,5 +104,7 @@ Add hibernate option to power menu with this guide: http://ubuntuhandbook.org/in
 
 Install the following /etc/profile.d/motd.sh:
 
-```#!/bin/bash
-/usr/bin/fortune | /usr/bin/cowsay```
+```
+#!/bin/bash
+/usr/bin/fortune | /usr/bin/cowsay
+```
