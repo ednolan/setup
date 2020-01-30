@@ -2,6 +2,18 @@ google chrome: super auto refresh, session buddy, ace jump, rearrange tabs
 
 firefox: tab session manager, saka key, (linux only) Ctrl+Number to switch tabs, (hidpi) Fixed Zoom
 
+firefox privacy settings:
+
+enhanced tracking protection: custom
+cookies: all third-party cookies
+tracking content: in all windows
+cryptominers
+fingerprinters
+
+delete cookies and site data when firefox is closed
+
+untick "Ask to save logins and passwords for websites"
+
 saka key settings:
 
 - smooth scroll: off
