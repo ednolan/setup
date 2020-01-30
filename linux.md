@@ -94,6 +94,8 @@ Edit keyboard map as described: https://askubuntu.com/a/766216 to swap cmd and c
 
 Alternatively use Keyboard -> Layouts -> Options -> Alt/Win key behavior to rearrange the modifier keys (option for a Windows keyboard is "Ctrl is mapped to Alt; Alt is mapped to Win"
 
+Remove ugly system fonts using this method: https://askubuntu.com/a/811310
+
 # Hibernation
 
 Find UUID of swap partition and append it to the `GRUB_CMDLINE_LINUX_DEFAULT` param in `/etc/default/grub` as `resume=UUID=your-uuid-here` and then run `sudo update-grub`
