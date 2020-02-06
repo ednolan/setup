@@ -2,7 +2,7 @@
 alias ll="ls -lhA"
 
 # New emacs with colors etc
-alias coloremacs="TERM=xterm-24bits /home/eddie/emacsstuff/bin/emacs -nw"
+alias coloremacs="source ~/edwards-stuff/spack/emacs-rtags.sh && TERM=xterm-24bits emacs"
 
 # This ulimit command is annoying
 alias coredumps="ulimit -S -c unlimited"
