@@ -1,0 +1,7 @@
+#!/bin/bash
+# Local Variables:
+# mode: sh
+# sh-shell: bash
+# End:
+yum -y groupinstall "Development Tools"
+yum -y install gnutls-dev

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ -d ~/localbuild/gambatte-speedrun ]] ; then
+    rm -rf ~/localbuild/gambatte-speedrun
+fi
+mkdir -p ~/localbuild
+git clone https://github.com/Dabomstew/gambatte-speedrun ~/localbuild/gambatte-speedrun
+cd ~/localbuild/gambatte-speedrun
+sh scripts/build_qt.sh

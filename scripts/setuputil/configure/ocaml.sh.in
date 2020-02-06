@@ -1,0 +1,9 @@
+🍎☣️#!/bin/bash
+
+# Opam
+opam init
+opam switch create 4.08.1
+eval `opam config env`
+
+# Semio
+opam install tuareg merlin ocp-indent menhir ppx_sexp_conv ppx_compare ppx_custom_printf ppx_enumerate core ocamlgraph dune

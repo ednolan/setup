@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo apt install build-essential git scons zlib1g-dev qt5-default libqt5x11extras5-dev libxrandr-dev libxv-dev libasound2-dev

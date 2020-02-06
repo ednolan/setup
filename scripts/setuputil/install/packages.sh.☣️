@@ -1,0 +1,61 @@
+#!/bin/bash
+
+## Desktop environment/theme
+
+# Add ppa for cinnamon and install it
+sudo apt-add-repository -y ppa:embrosyn/cinnamon
+sudo apt update
+sudo apt install -y cinnamon blueberry
+
+# Adwaita theme
+sudo apt install -y adwaita-icon-theme adwaita-icon-theme-full
+
+## Application software
+
+# Audio
+sudo apt install -y audacity pianobooster
+
+# Browsers
+
+# Add ppa for chrome and install it
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
+sudo apt update
+sudo apt install -y google-chrome-stable
+
+# Utilities
+sudo apt install -y curl gnome-tweak-tool gparted htop k4dirstat network-manager-openvpn-gnome openssh-server openvpn systemd-coredump tree xclip xsel
+
+# Video games
+sudo apt install -y pioneers
+
+## Programming languages/tools
+
+# C++
+sudo apt install -y clang libclang-dev libgflags-dev libboost-all-dev
+
+# CMake
+sudo apt install -y cmake
+
+# rtags
+sudo apt install -y bear
+
+# Meson
+sudo apt install -y meson
+
+# OCaml
+sudo apt install -y m4 bubblewrap
+
+# Python
+sudo apt install -y python-pip python3-tk
+
+# Tex
+sudo apt install -y texlive latexmk texlive-xetex
+
+## Projects and libraries
+
+# CD player
+sudo apt install -y libasound-dev libfftw3-dev
+
+# Desmond
+sudo apt install -y libgtkmm-3.0-dev libsndfile1-dev uuid-dev

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -ex
+
+if [[ -d ~/localbuild/swift ]] ; then
+    rm -rf ~/localbuild/swift
+fi
+mkdir -p ~/localbuild/swift
+wget -P ~/localbuild/swift https://swift.org/builds/swift-5.0.1-release/ubuntu1804/swift-5.0.1-RELEASE/swift-5.0.1-RELEASE-ubuntu18.04.tar.gz
+wget -P ~/localbuild/swift https://swift.org/builds/swift-5.0.1-release/ubuntu1804/swift-5.0.1-RELEASE/swift-5.0.1-RELEASE-ubuntu18.04.tar.gz.sig
+wget -q -O - https://swift.org/keys/all-keys.asc | gpg --import -
+gpg --keyserver hkp://pool.sks-keyservers.net --refresh-keys Swift
+(cd ~/localbuild/swift
+ gpg --verify swift-5.0.1-RELEASE-ubuntu18.04.tar.gz.sig
+ tar xzf swift-5.0.1-RELEASE-ubuntu18.04.tar.gz
+)
