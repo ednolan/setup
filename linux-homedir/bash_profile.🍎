@@ -1,0 +1,9 @@
+# OPAM configuration
+. ~/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+[ -r ~/.bashrc ] && . ~/.bashrc
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
