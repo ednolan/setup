@@ -1,6 +1,6 @@
 [user]
-	name = Edward Nolan
-	email = eddiejnolan@gmail.com
+    name = Edward Nolan
+    email = eddiejnolan@gmail.com
 [alias]
     co = checkout
     ci = commit
@@ -10,3 +10,5 @@
     cav = commit -av
     com = checkout master
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[core]
+    sshCommand = ssh -i ~/.ssh/id_rsa_git
