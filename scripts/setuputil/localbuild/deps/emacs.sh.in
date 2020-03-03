@@ -5,4 +5,4 @@
 # End:
 ☣️sudo apt install build-essential pkg-config gnutls-dev libncurses-dev libxaw7-dev libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev gnutls-dev
 💠yum -y groupinstall "Development Tools"
-yum -y install gnutls-dev
+yum -y install gnutls-devel

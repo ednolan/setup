@@ -1,6 +1,13 @@
 #!/bin/bash
 
 # SSH and git
-[[ ! -f ~/.ssh/id_rsa.pub ]] || exit 1
-☣️🍎💾ssh-keygen -t rsa -C 'eddiejnolan@gmail.com'
-🍏💠ssh-keygen -t rsa -C 'enolan@maystreet.com'
+if [[ ! -f ~/.ssh/id_rsa ]] ; then
+    echo "Create id_rsa: "
+    ☣️🍎💾ssh-keygen -t rsa -C 'eddiejnolan@gmail.com'
+    🍏💠ssh-keygen -t rsa -C 'enolan@maystreet.com'
+fi
+if [[ ! -f ~/.ssh/id_rsa_git ]] ; then
+    echo "Create ~/.ssh/id_rsa_git: "
+    ☣️🍎💾ssh-keygen -t rsa -C 'eddiejnolan@gmail.com'
+    🍏💠ssh-keygen -t rsa -C 'enolan@maystreet.com'
+fi

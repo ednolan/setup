@@ -19,10 +19,10 @@ git remote add origin git@github.com:ednolan/setup.git
 if [[ ! -f ~/.ssh/id_rsa ]] ; then
     read -p "Enter emoji: " emoji
     ./scripts/setuputil/setuptool.sh --emoji $emoji configure ssh-key
-    echo "Add this public key to the git remotes: "
-    cat ~/.ssh/id_rsa.pub
-    read -p "Press enter when finished"
 fi
+echo "Add this public key to the git remotes if you haven't already: "
+cat ~/.ssh/id_rsa_git.pub
+read -p "Press enter when finished"
 git fetch
 git reset --hard origin/master
 git submodule update --init
