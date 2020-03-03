@@ -1,5 +1,6 @@
 #!/bin/bash
 
-[[ brew help ]] || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew help &>/dev/null
+[[ $? -eq 0 ]] || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 brew install gnu-getopt htop tmux wget
