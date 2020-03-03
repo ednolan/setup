@@ -6,6 +6,7 @@ declare script_dir=$(dirname $BASH_SOURCE)
 
 declare emoji=$1
 [[ -n $emoji ]] || exit 1
+touch ~/.bashrc
 if [[ "$OSTYPE" == "darwin"* ]]; then
     sed -i '' '/##### custom suffix follows/,$d' ~/.bashrc
 else
