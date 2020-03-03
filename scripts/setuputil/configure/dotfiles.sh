@@ -15,7 +15,7 @@ fi
 echo '##### custom suffix follows' >> ~/.bashrc
 cat $script_dir/../../../linux-homedir/bashrc-suffix.$emoji >> ~/.bashrc
 if [[ -f $script_dir/../../../linux-homedir/bash_profile.$emoji ]] ; then
-    cp $script_dir/../../../linux-homedir/bash_profile.$emoji >> ~/.bash_profile
+    cp $script_dir/../../../linux-homedir/bash_profile.$emoji ~/.bash_profile
 fi
 cp $script_dir/../../../linux-homedir/bash_aliases.$emoji ~/.bash_aliases
 cp $script_dir/../../../linux-homedir/gitconfig.$emoji ~/.gitconfig
