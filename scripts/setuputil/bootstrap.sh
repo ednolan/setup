@@ -6,7 +6,11 @@ set -e
 mkdir -p ~/sync
 cd ~/sync
 wget https://github.com/ednolan/setup/archive/master.zip
-unzip master.zip
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    ditto -xk master.zip .
+else
+    unzip master.zip
+fi
 rm master.zip
 mv setup-master setup
 cd setup
