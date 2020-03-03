@@ -6,7 +6,11 @@ declare script_dir=$(dirname $BASH_SOURCE)
 
 declare emoji=$1
 [[ -n $emoji ]] || exit 1
-sed -i '/##### custom suffix follows/,$d' ~/.bashrc
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    sed -i '' '/##### custom suffix follows/,$d' ~/.bashrc
+else
+    sed -i '/##### custom suffix follows/,$d' ~/.bashrc
+fi
 echo '##### custom suffix follows' >> ~/.bashrc
 cat $script_dir/../../../linux-homedir/bashrc-suffix.$emoji >> ~/.bashrc
 if [[ -f $script_dir/../../../linux-homedir/bash_profile.$emoji ]] ; then
