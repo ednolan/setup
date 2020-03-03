@@ -12,5 +12,5 @@ git checkout v2.4.3
 # hack: bash completion doesn't respect CMAKE_INSTALL_PREFIX
 sed -i '/add_subdirectory(shell-completion)/d' ~/localbuild/bear/bear/CMakeLists.txt
 cmake -DCMAKE_INSTALL_PREFIX=~/localbuild/bear .
-make -j$(nproc)
+make -j8
 make install

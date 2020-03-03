@@ -8,6 +8,6 @@ cd ~/localbuild/emacs
 wget http://ftp.gnu.org/gnu/emacs/emacs-26.3.tar.xz
 tar xf emacs-26.3.tar.xz
 cd emacs-26.3
-./configure --prefix ~/localbuild/emacs #--with-x-toolkit=no
-make -j$(nproc)
+./configure --prefix ~/localbuild/emacs --with-x-toolkit=no
+make -j8
 make install

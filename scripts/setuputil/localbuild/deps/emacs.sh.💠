@@ -4,4 +4,4 @@
 # sh-shell: bash
 # End:
 yum -y groupinstall "Development Tools"
-yum -y install gnutls-dev
+yum -y install gnutls-devel

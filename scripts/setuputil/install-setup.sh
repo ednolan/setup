@@ -18,5 +18,11 @@ case "$emoji" in
        ${script_dir}/setuptool.sh --emoji ☣️ configure ocaml ;
        ${script_dir}/setuptool.sh --emoji ☣️ install go ;
        ${script_dir}/setuptool.sh --emoji ☣️ install rust ;;
+    🍏) ${script_dir}/setuptool.sh --emoji 🍏 configure dotfiles ;
+       ${script_dir}/setuptool.sh --emoji 🍏 configure emacs ;
+       ${script_dir}/setuptool.sh --emoji 🍏 install packages ;
+    💠) ${script_dir}/setuptool.sh --emoji 💠 localbuild_all ;
+       ${script_dir}/setuptool.sh --emoji 💠 configure dotfiles ;
+       ${script_dir}/setuptool.sh --emoji 💠 configure emacs ;
     *) exit 1 ;;
 esac

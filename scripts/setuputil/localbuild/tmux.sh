@@ -17,7 +17,7 @@ sh autogen.sh
 
 ./configure --prefix=$(realpath ~/localbuild/tmux)
 
-make -j$(nproc) && make install
+make -j8 && make install
 
 if [[ -d ~/.tmux/plugins/tpm ]] ; then
     rm -rf ~/.tmux/plugins/tpm

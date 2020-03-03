@@ -12,11 +12,13 @@ mv setup-master setup
 cd setup
 git init
 git remote add origin git@github.com:ednolan/setup.git
-read -p "Enter emoji: " emoji
-./scripts/setuputil/setuptool.sh --emoji $emoji configure ssh-key
-echo "Please add the following key to github: "
-cat ~/.ssh/id_rsa.pub
-read -p "Press enter when finished"
+if [[ ! -f ~/.ssh/id_rsa ]] ; then
+    read -p "Enter emoji: " emoji
+    ./scripts/setuputil/setuptool.sh --emoji $emoji configure ssh-key
+    echo "Add this public key to the git remotes: "
+    cat ~/.ssh/id_rsa.pub
+    read -p "Press enter when finished"
+fi
 git fetch
 git reset --hard origin/master
 git submodule update --init
