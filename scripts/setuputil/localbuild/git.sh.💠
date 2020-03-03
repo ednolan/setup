@@ -15,6 +15,6 @@ git checkout v2.25.1
 
 make configure
 
-./configure --prefix=$(realpath ~/localbuild/git)
+./configure --prefix=$(realpath ~/localbuild/git) --with-expat --with-openssl
 
 make -j8 && make install
