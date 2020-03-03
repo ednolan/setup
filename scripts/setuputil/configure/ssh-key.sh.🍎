@@ -3,6 +3,6 @@
 # SSH and git
 if [[ ! -f ~/.ssh/id_rsa ]] ; then
     echo "Create id_rsa: "
-    ssh-keygen -t rsa -C 'eddiejnolan@gmail.com'
-    ssh-keygen -t rsa -C 'eddiejnolan@gmail.com'
+    ssh-keygen -t rsa -b 4096 -C 'eddiejnolan@gmail.com'
+    ssh-keygen -t rsa -b 4096 -C 'eddiejnolan@gmail.com'
     
