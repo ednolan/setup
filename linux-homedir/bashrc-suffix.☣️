@@ -15,3 +15,10 @@ export COLOR_SUCCESS=$(printf '\[\x1b[38;2;3;106;7m\]')
 export COLOR_FAILURE=$(printf '\[\x1b[38;2;197;6;11m\]')
 export SYMBOL_GIT_BRANCH='→'
 source /home/eddie/sync/setup/bash-powerline/bash-powerline.sh
+# https://unix.stackexchange.com/a/217223
+if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then
+  eval `ssh-agent`
+  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+fi
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+ssh-add -l > /dev/null || ssh-add && ssh-add ~/.ssh/id_rsa_git

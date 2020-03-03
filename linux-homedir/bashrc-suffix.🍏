@@ -12,3 +12,11 @@ source /Users/enolan/sync/setup/bash-powerline/bash-powerline.sh
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+# https://unix.stackexchange.com/a/217223
+if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then
+  eval `ssh-agent`
+  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+fi
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+ssh-add -l > /dev/null || ssh-add && ssh-add ~/.ssh/id_rsa_git
