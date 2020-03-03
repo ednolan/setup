@@ -2,6 +2,12 @@ google chrome: super auto refresh, session buddy, ace jump, rearrange tabs
 
 firefox: tab session manager, saka key, (linux only) Ctrl+Number to switch tabs, (hidpi) Fixed Zoom
 
+firefox "home" settings:
+
+homepage and new windows: blank page
+new tabs: blank page
+firefox home content: untick all
+
 firefox privacy settings:
 
 enhanced tracking protection: custom
