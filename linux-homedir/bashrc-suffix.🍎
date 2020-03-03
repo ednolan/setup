@@ -1,7 +1,7 @@
 # -*- mode: sh; sh-shell: bash; -*-
 export EDITOR="nano"
 
-export PATH=$PATH:~/localbuild/rtags/bin
+export PATH=$PATH:~/localbuild/rtags/bin/
 export PATH=$PATH:~/sync/swift/emojisplit/.build/x86_64-apple-macosx/debug/
 
 export COLOR_RESET=$(echo -en "\x1b[0m\n") \

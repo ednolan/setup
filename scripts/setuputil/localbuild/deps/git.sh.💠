@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo yum install automake libevent-devel ncurses-devel
