@@ -121,3 +121,7 @@ Surface: Pluecker's Conoid
 Display Mode: Random
 
 Untick "Wander", "Spin", "Show Frame Rate"
+
+**Home and End Keys**
+
+Use this SO answer to fix the home/end keys: https://apple.stackexchange.com/a/18028
