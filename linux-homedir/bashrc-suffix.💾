@@ -8,7 +8,9 @@ export COLOR_GIT=$(printf '\[\x1b[38;2;0;102;255m\]')
 export COLOR_SUCCESS=$(printf '\[\x1b[38;2;3;106;7m\]')
 export COLOR_FAILURE=$(printf '\[\x1b[38;2;197;6;11m\]')
 export SYMBOL_GIT_BRANCH='→'
-source /home/eddie/sync/setup/bash-powerline/bash-powerline.sh
+
+source ~/sync/setup/bash-powerline/bash-powerline.sh
+
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
