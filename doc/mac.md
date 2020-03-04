@@ -130,6 +130,10 @@ App Shortcuts:
 
 > Chrome: Open Location... -> F6
 
+Text:
+
+Untick "Use smart quotes and dashes"
+
 **Users and Groups**
 
 Login Items:
@@ -137,6 +141,20 @@ Login Items:
 > BetterTouchTool, Flux
 
 ## Other Settings
+
+**TextEdit Preferences**
+
+New Document:
+
+Format: Plain Text
+
+Options: Untick "Smart quotes", "Smart dashes"
+
+Open and Save:
+
+Tick "Display HTML files as HTML code instead of formatted text"
+
+Untick "Add .txt extension to plain text files"
 
 **Screenshot Preferences**
 
