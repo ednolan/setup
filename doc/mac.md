@@ -12,6 +12,20 @@ Discovery DNS-SD Browser, Disk Inventory X, Emacs, FileZilla, Flux, GIMP, MPlaye
 
 ## Application settings
 
+**Finder**
+
+Preferences:
+
+General: Show these items on the desktop: Untick all
+
+General: New Finder windows show: Home directory
+
+General: Untick "Open folders in tabs instead of new windows"
+
+Sidebar: Show these items in the sidebar: AirDrop, Applications, Desktop, Documents, Downloads, home directory, computer, Hard disks, External disks, CDs, DVDs, and iOS Devices
+
+Advanced: Show all filename extensions
+
 **iTerm2**
 
 General: Magic: Advanced GPU Settings: Untick "Maximize throughput"
@@ -24,15 +38,13 @@ Profiles: Text:
 
 > Font: SF Mono Light (size 13 laptop, size 16 desktop)
 
-> Install fonts from /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/
-
 Profiles: Terminal: Scrollback Lines: 50000; untick "Unlimited Scrollback"
 
 Profiles: Terminal: Report Terminal Type: xterm-256color, Silence Bell
 
 Profiles: Terminal: Notifications: untick Notification Center Alerts
 
-Profiles: Keys: Left option key acts as +Esc, Right option key acts as +Esc
+Profiles: Keys: Left option key acts as Esc+, Right option key acts as Esc+
 
 Profiles: Keys: Key mappings:
 
@@ -44,11 +56,15 @@ Profiles: Keys: Key mappings:
 
 Make sure that there are no Option <arrow key> mappings.
 
-Profiles: Keys: Remap Modifiers: Swap command and control
+Keys: Remap Modifiers: Swap command and control
 
 **BetterTouchTool**
 
 Standard Settings -> BTT Remote -> Untick "Enable BTT Remote Support"
+
+Map this "Normal Mouse" shortcut:
+
+Middle Mouse Button -> Mission Control
 
 Map these keyboard shortcuts:
 
@@ -62,17 +78,39 @@ Control Command S -> Start Screen Saver
 
 ## System Preferences
 
+**General**
+
+Default web browser: Firefox
+
+**Dock**
+
+Tick "Automatically hide and show the Dock"
+
+Untick "Show recent applications in Dock"
+
 **Mission Control**
 
 Untick "Automatically rearrange Spaces based on most recent use"
 
+Bind Mission Control to F12
+
+Unbind "Application Windows", "Show Desktop"
+
 **Security and Privacy**
+
+General: Require password immediately after sleep or screen saver begins
+
+Privacy:
 
 Enable accessibility controls for the following:
 
 BetterTouchTool, iTerm
 
 **Keyboard**
+
+Keyboard:
+
+Key Repeat: Fast
 
 Shortcuts:
 
@@ -81,6 +119,8 @@ Shortcuts:
 > Mission Control: Alt-1,2,3,4,5,6 to Switch to Desktop 1,2,3,4,5,6 (these desktops must exist to create these shortcuts)
 
 App Shortcuts:
+
+> Firefox: Quit Firefox -> Option Command Q
 
 > Safari: Quit -> Option Command Q
 
@@ -105,6 +145,8 @@ Login Items:
 > Command Shift 5 -> Options -> Save screenshots to Documents/Screenshots directory
 
 **Screen Saver**
+
+Start after: Never
 
 Download/install XScreensaver
 
