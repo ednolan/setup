@@ -140,6 +140,14 @@ Login Items:
 
 > BetterTouchTool, Flux
 
+**Date & Time**
+
+Clock:
+
+Display the time with seconds
+
+Untick "Show the day of the week"
+
 ## Other Settings
 
 **TextEdit Preferences**
