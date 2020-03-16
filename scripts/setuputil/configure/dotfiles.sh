@@ -19,6 +19,6 @@ if [[ -f $script_dir/../../../linux-homedir/bash_profile.$emoji ]] ; then
 fi
 cp $script_dir/../../../linux-homedir/bash_aliases.$emoji ~/.bash_aliases
 cp $script_dir/../../../linux-homedir/gitconfig.$emoji ~/.gitconfig
+cp $script_dir/../../../linux-homedir/tmux.conf.$emoji ~/.tmux.conf
 cp $script_dir/../../../linux-homedir/rdmrc ~/.rdmrc
-cp $script_dir/../../../linux-homedir/tmux.conf ~/.tmux.conf
 cp -r $script_dir/../../../linux-homedir/config/. ~/.config
