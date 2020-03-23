@@ -2,12 +2,12 @@
 export EDITOR="nano"
 
 export GOPATH=$HOME/sync/go
-export PATH="~/.cabal/bin/:$PATH"
-export PATH="~/localbuild/swift/swift-5.0.1-RELEASE-ubuntu18.04/usr/bin:$PATH"
-export PATH="~/sync/swift/emojisplit/.build/x86_64-unknown-linux/debug/:$PATH"
-export PATH="~/localbuild/tmux/bin/:$PATH"
-export PATH="~/localbuild/emacs/bin/:$PATH"
-export PATH="~/localbuild/rtags/bin/:$PATH"
+export PATH="$HOME/.cabal/bin/:$PATH"
+export PATH="$HOME/localbuild/swift/swift-5.0.1-RELEASE-ubuntu18.04/usr/bin:$PATH"
+export PATH="$HOME/sync/swift/emojisplit/.build/x86_64-unknown-linux/debug/:$PATH"
+export PATH="$HOME/localbuild/tmux/bin/:$PATH"
+export PATH="$HOME/localbuild/emacs/bin/:$PATH"
+export PATH="$HOME/localbuild/rtags/bin/:$PATH"
 export COLOR_RESET=$(echo -en "\x1b[0m\n") \
 export COLOR_CWD=$(printf '\[\x1b[38;2;0;0;255m\]')
 export COLOR_GIT=$(printf '\[\x1b[38;2;0;102;255m\]')
