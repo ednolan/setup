@@ -1,8 +1,8 @@
 # -*- mode: sh; sh-shell: bash; -*-
 export EDITOR="nano"
 
-export PATH="$HOME/localbuild/rtags/bin/:$PATH"
-export PATH="$HOME/sync/swift/emojisplit/.build/x86_64-apple-macosx/debug/:$PATH"
+export PATH="$HOME/localbuild/rtags/bin:$PATH"
+export PATH="$HOME/sync/swift/emojisplit/.build/debug:$PATH"
 
 export COLOR_RESET=$(echo -en "\x1b[0m\n") \
 export COLOR_CWD=$(printf '\[\x1b[38;2;0;0;255m\]')
