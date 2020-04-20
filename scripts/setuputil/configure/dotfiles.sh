@@ -20,5 +20,7 @@ fi
 cp $script_dir/../../../linux-homedir/bash_aliases.$emoji ~/.bash_aliases
 cp $script_dir/../../../linux-homedir/gitconfig.$emoji ~/.gitconfig
 cp $script_dir/../../../linux-homedir/tmux.conf.$emoji ~/.tmux.conf
-cp $script_dir/../../../linux-homedir/rdmrc ~/.rdmrc
+if [[ -f $script_dir/../../../linux-homedir/rdmrc.$emoji ]] ; then
+    cp $script_dir/../../../linux-homedir/rdmrc.$emoji ~/.rdmrc
+fi
 cp -r $script_dir/../../../linux-homedir/config/. ~/.config
