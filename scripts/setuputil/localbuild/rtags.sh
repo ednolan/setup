@@ -14,5 +14,5 @@ cd ~/localbuild/rtags/rtags
 git checkout v2.38
 
 cmake -DCMAKE_INSTALL_PREFIX=~/localbuild/rtags .
-make -j8
+make -j$(nproc)
 make install
