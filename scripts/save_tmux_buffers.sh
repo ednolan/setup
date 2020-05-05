@@ -2,7 +2,8 @@
 
 function main()
 {
-	local outdir="/u/edward/tmux-bufs"
+    [[ -z $TMUX ]] || exit 1
+	local outdir="$HOME/tmux-bufs"
 	mkdir -p $outdir
 	local -a tmux_bufs=($(tmux ls | cut -d' ' -f1 | tr -d ':'))
 	for buf in ${tmux_bufs[@]} ; do
