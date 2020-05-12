@@ -1,0 +1,41 @@
+#!/bin/bash
+
+set -e
+
+function uncooperative() {
+    trap '
+  trap - INT
+  kill -s INT "$$"
+' INT
+}
+
+function install_if_not_present () {
+    local pkg="$1"
+    local result=$(spack load "$pkg" ; echo $?)
+    if [[ $result -eq 1 ]] ; then
+        spack install -y "$pkg"
+    fi
+}
+
+function main() {
+    uncooperative
+
+    local compiler="gcc@10.1.0"
+    local compiler_bootstrap="gcc@9.3.0"
+    #local -a packages=(bash bear binutils cmake gdb go llvm node-js npm yarn) # gcc 10 can't build binutils
+    local -a packages=(bash bear cmake gdb go "llvm -gold" node-js npm yarn) # llvm -gold prevents it depending on binutils
+
+    source ~/spack/share/spack/setup-env.sh
+
+    install_if_not_present binutils%${compiler_bootstrap}
+    spack load binutils%${compiler_bootstrap}
+    install_if_not_present ${compiler}%${compiler_bootstrap}
+    spack load ${compiler}%${compiler_bootstrap}
+    spack compiler find
+
+    for package in "${packages[@]}" ; do
+        install_if_not_present "${package}%${compiler}"
+    done
+}
+
+main "$@"
