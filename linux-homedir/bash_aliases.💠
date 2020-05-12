@@ -3,7 +3,7 @@
 alias ll="ls -lhA"
 
 # New emacs with colors etc
-alias coloremacs="source ~/spack/share/spack/setup-env.sh ; spack load llvm@10.0.0 ; spack load gdb@9.1 ; TERM=xterm-24bits ~/localbuild/emacs/bin/emacs -nw"
+alias coloremacs="source ~/spack/share/spack/setup-env.sh ; spack load llvm@10.0.0%gcc@10.1.0 ; spack load gdb@9.1%gcc@10.1.0 ; TERM=xterm-24bits ~/localbuild/emacs/bin/emacs -nw"
 
 # This ulimit command is annoying
 alias coredumps="ulimit -S -c unlimited"
