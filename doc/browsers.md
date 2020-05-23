@@ -1,6 +1,6 @@
 google chrome: super auto refresh, session buddy, ace jump, rearrange tabs
 
-firefox: tab session manager, saka key, (linux only) Ctrl+Number to switch tabs, (hidpi) Fixed Zoom
+firefox: session boss, saka key, (linux only) Ctrl+Number to switch tabs, (hidpi) Fixed Zoom
 
 firefox "home" settings:
 
