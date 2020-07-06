@@ -116,7 +116,7 @@ Shortcuts:
 
 > Mission Control: Untick "Move left a space", "Move right a space"
 
-> Mission Control: Alt-1,2,3,4,5,6 to Switch to Desktop 1,2,3,4,5,6 (these desktops must exist to create these shortcuts)
+> Mission Control: Alt-1,2,3,4,5,6,7,8 to Switch to Desktop 1,2,3,4,5,6,7,8 (these desktops must exist to create these shortcuts)
 
 App Shortcuts:
 
