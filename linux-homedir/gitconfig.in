@@ -13,3 +13,5 @@
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [core]
     sshCommand = ssh -i ~/.ssh/id_rsa_git
+💠[gc]
+    auto = 0
