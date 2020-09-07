@@ -10,10 +10,8 @@ export SYMBOL_GIT_BRANCH='→'
 
 source ~/sync/setup/bash-powerline/bash-powerline.sh
 
-# https://unix.stackexchange.com/a/217223
-if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then
-  eval `ssh-agent`
-  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+ if [ -f ~/.bash_functions ]; then
+    source ~/.bash_functions
 fi
-export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
-ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_rsa_git)
+
+# https://unix.stackexchange.com/a/217223

@@ -1,0 +1,6 @@
+# -*- mode: sh; sh-shell: bash; -*-
+
+# https://unix.stackexchange.com/a/275691
+function isbinary() {
+  LC_MESSAGES=C grep -Hm1 '^' < "${1-$REPLY}" | grep -q '^Binary'
+}

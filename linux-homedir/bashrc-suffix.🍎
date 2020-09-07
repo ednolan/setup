@@ -18,7 +18,11 @@ case "$-" in
 esac
 
 if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+    source ~/.bash_aliases
+fi
+
+ if [ -f ~/.bash_functions ]; then
+    source ~/.bash_functions
 fi
 
 # https://unix.stackexchange.com/a/217223
