@@ -5,9 +5,9 @@ if [[ -d ~/localbuild/emacs ]] ; then
 fi
 mkdir -p ~/localbuild/emacs
 cd ~/localbuild/emacs
-wget http://ftp.gnu.org/gnu/emacs/emacs-26.3.tar.xz
-tar xf emacs-26.3.tar.xz
-cd emacs-26.3
+wget http://ftp.gnu.org/gnu/emacs/emacs-27.1.tar.xz
+tar xf emacs-27.1.tar.xz
+cd emacs-27.1
 ./configure --prefix ~/localbuild/emacs --with-x-toolkit=no
 make -j8
 make install
