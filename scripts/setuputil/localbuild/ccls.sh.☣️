@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -ex
+
+if [[ -d ~/localbuild/ccls ]] ; then
+    rm -rf ~/localbuild/ccls
+fi
+mkdir -p ~/localbuild/ccls
+
+git clone --depth=1 --recursive https://github.com/MaskRay/ccls ~/localbuild/ccls/ccls
+
+cd ~/localbuild/ccls/ccls
+
+declare spack_root=/mnt/Extra/spack/
+declare llvm_dir="$spack_root/opt/spack/linux-ubuntu18.04-skylake/clang-6.0.0/llvm-10.0.0-b7qtafkaz3huwcdef6wyqizms6unj3ik/"
+
+cmake -H. -BRelease -DCMAKE_BUILD_TYPE=Release \
+      -DCMAKE_PREFIX_PATH="$llvm_dir" \
+      -DLLVM_INCLUDE_DIR="$llvm_dir"/include \
+      -DLLVM_BUILD_INCLUDE_DIR="$llvm_dir"/include
+cmake --build Release -- -j8
