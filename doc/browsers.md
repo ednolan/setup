@@ -1,5 +1,11 @@
 google chrome: super auto refresh, session buddy, ace jump, rearrange tabs
 
+go to chrome://settings/content/cookies
+turn on: "Clear cookies and site data when you quit chrome"
+turn on: "block third-party cookies"
+
+settings -> passwords -> turn off "offer to save passwords", "auto sign-in"
+
 firefox: session boss, saka key, tabby, (linux only) Ctrl+Number to switch tabs, (hidpi) Fixed Zoom
 
 firefox "home" settings:
