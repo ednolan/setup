@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/home/eddie/localbuild/ccls/ccls/Release/ccls --init='{"clang":{"extraArgs": ["--gcc-toolchain=/media/Extra/spack/opt/spack/linux-ubuntu18.04-skylake/gcc-7.5.0/gcc-10.2.0-hp2j5ulzmsa5i4jegogfwqmccsbg44mq/"]}}' "$@"

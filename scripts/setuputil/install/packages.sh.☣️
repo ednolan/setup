@@ -32,7 +32,7 @@ sudo apt install -y pioneers
 ## Programming languages/tools
 
 # C++
-sudo apt install -y clang libclang-dev libgflags-dev libboost-all-dev
+sudo apt install -y llvm-7 clang-7 libclang-7-dev libgflags-dev libboost-all-dev
 
 # CMake
 sudo apt install -y cmake

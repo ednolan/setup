@@ -11,9 +11,6 @@ git clone --depth=1 --recursive https://github.com/MaskRay/ccls ~/localbuild/ccl
 
 cd ~/localbuild/ccls/ccls
 
-cmake -H. -BRelease -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_PREFIX_PATH=/usr/lib/llvm-7 \
-    -DLLVM_INCLUDE_DIR=/usr/lib/llvm-7/include \
-    -DLLVM_BUILD_INCLUDE_DIR=/usr/include/llvm-7/
+cmake -GNinja -H. -BRelease -DCMAKE_PREFIX_PATH=/scratch/enolan/stuff/2020-09/clang+llvm-10.0.1-powerpc64le-linux-rhel-7.4
 
 cmake --build Release -- -j8
