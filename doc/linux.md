@@ -62,6 +62,8 @@ Fonts -> Monospace Font -> Menlo Regular 11
 
 Fonts -> Window Title Font -> Helvetica Neue Book 10
 
+Keyboard -> Shortcuts -> General -> Cycle through open windows of the same application -> Assign "Super-`"
+
 Keyboard -> Shortcuts -> Windows -> Tiling and Snapping, assign "Push tile up/down/left/right" to Ctrl+Alt+Up/Down/Left/Right
 
 Keyboard -> Shortcuts -> Workspace -> Direct Navigation
