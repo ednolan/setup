@@ -14,6 +14,6 @@ mkdir -p ~/localbuild/ccls
 cd ~/localbuild/ccls/ccls
 
 cmake -H. -BRelease -DCMAKE_BUILD_TYPE=Release \
-      -DCMAKE_PREFIX_PATH=/scratch/enolan/stuff/2020-09/clang+llvm-8.0.0-x86_64-linux-gnu-ubuntu-18.04/
+      -DCMAKE_PREFIX_PATH=/scratch/enolan/stuff/2020-10/clang+llvm-11.0.0-x86_64-linux-gnu-ubuntu-16.04/
 
 cmake --build Release -- -j8
