@@ -1,4 +1,0 @@
-#!/bin/bash
-
-sudo yum groupinstall "Development Tools"
-sudo yum install gcc-c++ cmake clang clang-devel

@@ -1,5 +1,0 @@
-☣️💠#!/bin/bash
-
-☣️sudo apt install -y build-essential g++ cmake clang libclang-dev
-💠sudo yum groupinstall "Development Tools"
-sudo yum install gcc-c++ cmake clang clang-devel
