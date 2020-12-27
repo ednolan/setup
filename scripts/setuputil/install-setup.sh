@@ -26,5 +26,10 @@ case "$emoji" in
     💠) ${script_dir}/setuptool.sh --emoji 💠 localbuild_all ;
        ${script_dir}/setuptool.sh --emoji 💠 configure dotfiles ;
        ${script_dir}/setuptool.sh --emoji 💠 configure emacs ;;
+    💾) ${script_dir}/setuptool.sh --emoji 💾 install_build_deps ;
+       ${script_dir}/setuptool.sh --emoji 💾 localbuild emacs ;
+       ${script_dir}/setuptool.sh --emoji 💾 configure dotfiles ;
+       ${script_dir}/setuptool.sh --emoji 💾 configure emacs ;
+       ${script_dir}/setuptool.sh --emoji 💾 install packages ;
     *) exit 1 ;;
 esac

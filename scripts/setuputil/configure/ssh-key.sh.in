@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # SSH and git
-if [[ ! -f ~/.ssh/id_rsa ]] ; then
-    echo "Create id_rsa: "
-    ☣️🍎💾ssh-keygen -t rsa -b 4096 -C 'eddiejnolan@gmail.com'
-    🍏💠ssh-keygen -t rsa -b 4096 -C 'enolan@maystreet.com'
+if [[ ! -f ~/.ssh/id_ed25519 ]] ; then
+    echo "Create id_ed25519: "
+    ☣️🍎💾ssh-keygen -t ed25519 -C 'eddiejnolan@gmail.com'
+    🍏💠ssh-keygen -t ed25519 -C 'enolan@maystreet.com'
 fi
-if [[ ! -f ~/.ssh/id_rsa_git ]] ; then
-    echo "Create ~/.ssh/id_rsa_git: "
-    ☣️🍎💾ssh-keygen -t rsa -b 4096 -C 'eddiejnolan@gmail.com'
-    🍏💠ssh-keygen -t rsa -b 4096 -C 'enolan@maystreet.com'
+if [[ ! -f ~/.ssh/id_ed25519_git ]] ; then
+    echo "Create ~/.ssh/id_ed25519_git: "
+    ☣️🍎💾ssh-keygen -t ed25519 -C 'eddiejnolan@gmail.com'
+    🍏💠ssh-keygen -t ed25519 -C 'enolan@maystreet.com'
 fi

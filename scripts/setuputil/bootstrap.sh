@@ -16,12 +16,12 @@ mv setup-master setup
 cd setup
 git init
 git remote add origin git@github.com:ednolan/setup.git
-if [[ ! -f ~/.ssh/id_rsa ]] ; then
+if [[ ! -f ~/.ssh/id_ed25519 ]] ; then
     read -p "Enter emoji: " emoji
     ./scripts/setuputil/setuptool.sh --emoji $emoji configure ssh-key
 fi
 echo "Add this public key to the git remotes if you haven't already: "
-cat ~/.ssh/id_rsa_git.pub
+cat ~/.ssh/id_ed25519_git.pub
 read -p "Press enter when finished"
 git fetch
 git reset --hard origin/master

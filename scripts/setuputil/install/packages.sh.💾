@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Utilities
+sudo apt install -y curl htop openssh-server openvpn systemd-coredump tmux tree

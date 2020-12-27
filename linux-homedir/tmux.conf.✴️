@@ -13,7 +13,7 @@ set -g status-bg colour251
 # Various fixes for editor
 set-option -g xterm-keys on
 
- 
+
 
 # Home/end key hack
 bind -n End send-key C-e
