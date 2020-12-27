@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# SSH and git
-if [[ ! -f ~/.ssh/id_ed25519 ]] ; then
-    echo "Create id_ed25519: "
-    
