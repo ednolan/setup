@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -ex
 
@@ -7,7 +7,7 @@ declare script_dir=$(dirname $BASH_SOURCE)
 declare emoji=$1
 [[ -n $emoji ]] || exit 1
 touch ~/.bashrc
-if [[ "$OSTYPE" == "darwin"* ]]; then
+if [[ "$OSTYPE" == "darwin"* || "$OSTYPE" == "freebsd"* ]]; then
     sed -i '' '/##### custom suffix follows/,$d' ~/.bashrc
 else
     sed -i '/##### custom suffix follows/,$d' ~/.bashrc

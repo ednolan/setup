@@ -1,0 +1,6 @@
+# -*- mode: sh; sh-shell: bash; -*-
+
+[ -r ~/.bashrc ] && . ~/.bashrc
+
+# Needed so the shell will pick out the version of getopt(1) installed from ports
+export PATH="/usr/local/bin:$PATH"

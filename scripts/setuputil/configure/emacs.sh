@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 declare emoji=$1
 if [[ ! -d ~/.emacs.d ]] ; then

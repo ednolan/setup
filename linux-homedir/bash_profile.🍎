@@ -1,3 +1,4 @@
+# -*- mode: sh; sh-shell: bash; -*-
 # OPAM configuration
 . ~/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
