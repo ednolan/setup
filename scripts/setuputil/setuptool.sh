@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 declare HELP='
 setuptool.sh - Helper script for setting up a new machine
 

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [[ -d ~/localbuild/gambatte-speedrun ]] ; then
     rm -rf ~/localbuild/gambatte-speedrun

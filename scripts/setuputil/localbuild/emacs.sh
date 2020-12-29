@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -ex
 if [[ -d ~/localbuild/emacs ]] ; then
     rm -rf ~/localbuild/emacs

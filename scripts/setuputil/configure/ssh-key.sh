@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # SSH and git
 if [[ ! -f ~/.ssh/id_ed25519 ]] ; then
