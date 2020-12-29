@@ -23,7 +23,7 @@ source ~/sync/setup/bash-powerline/bash-powerline.sh
     *i*) fortune | cowsay ;; # interactive shell
 esac
 
-🍎💠💾🍏if [ -f ~/.bash_aliases ]; then
+🍎💠💾🍏👿if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
