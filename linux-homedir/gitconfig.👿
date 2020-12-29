@@ -1,8 +1,6 @@
 [user]
     name = Edward Nolan
-☣️🍎💾👿    email = eddiejnolan@gmail.com
-🍏💠    email = enolan@maystreet.com
-✴️[alias]
+[alias]
     co = checkout
     ci = commit
     st = status
@@ -12,9 +10,5 @@
     com = checkout master
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [core]
-☣️🍎🍏💠    sshCommand = ssh -i ~/.ssh/id_rsa_git
-💾👿    sshCommand = ssh -i ~/.ssh/id_ed25519_git
-✴️[grep]
+[grep]
     lineNumber = true
-💠[gc]
-    auto = 0

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pkg install curl emacs getopt git htop nano sudo tmux tree
