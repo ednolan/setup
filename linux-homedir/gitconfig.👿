@@ -1,5 +1,6 @@
 [user]
     name = Edward Nolan
+    email = eddiejnolan@gmail.com
 [alias]
     co = checkout
     ci = commit
@@ -10,5 +11,6 @@
     com = checkout master
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [core]
+    sshCommand = ssh -i ~/.ssh/id_ed25519_git
 [grep]
     lineNumber = true
