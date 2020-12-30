@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-sudo nix-env -iA cachix -f https://cachix.org/api/v1/install
-sudo cachix use srid
-sudo nix-env -if https://github.com/srid/neuron/archive/master.tar.gz
