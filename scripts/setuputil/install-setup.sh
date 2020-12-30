@@ -29,6 +29,8 @@ case "$emoji" in
     💾) ${script_dir}/setuptool.sh --emoji 💾 configure dotfiles ;
        ${script_dir}/setuptool.sh --emoji 💾 configure emacs ;
        ${script_dir}/setuptool.sh --emoji 💾 install packages ;
+       ${script_dir}/setuptool.sh --emoji 💾 install nix ;
+       ${script_dir}/setuptool.sh --emoji 💾 install neuron ;
        ${script_dir}/setuptool.sh --emoji 💾 install zfs ;;
     👿) ${script_dir}/setuptool.sh --emoji 👿 configure dotfiles ;
        ${script_dir}/setuptool.sh --emoji 👿 configure emacs ;
