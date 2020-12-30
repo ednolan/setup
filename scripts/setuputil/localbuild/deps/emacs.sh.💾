@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# Local Variables:
-# mode: sh
-# sh-shell: bash
-# End:
-sudo apt install build-essential pkg-config gnutls-dev libncurses-dev libxaw7-dev libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev gnutls-dev

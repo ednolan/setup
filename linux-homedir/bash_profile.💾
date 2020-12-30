@@ -1,0 +1,8 @@
+# -*- mode: sh; sh-shell: bash; -*-
+
+[ -r ~/.bashrc ] && . ~/.bashrc
+
+# Needed so the shell will pick out the version of getopt(1) installed from ports
+export PATH="/usr/local/bin:$PATH"
+# Needed so the shell will pick out ZFS 2.0 over the system version
+export PATH="/usr/local/sbin:$PATH"

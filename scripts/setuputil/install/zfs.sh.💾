@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+sudo portsnap fetch update
+sudo portinstall sysutils/openzfs
