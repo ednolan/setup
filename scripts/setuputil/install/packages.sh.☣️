@@ -2,10 +2,8 @@
 
 ## Desktop environment/theme
 
-# Add ppa for cinnamon and install it
-sudo apt-add-repository -y ppa:embrosyn/cinnamon
-sudo apt update
-sudo apt install -y cinnamon blueberry
+# Cinnamon
+sudo apt install -y cinnamon-desktop-environment
 
 # Adwaita theme
 sudo apt install -y adwaita-icon-theme adwaita-icon-theme-full
@@ -24,7 +22,7 @@ sudo apt update
 sudo apt install -y google-chrome-stable
 
 # Utilities
-sudo apt install -y curl gnome-tweak-tool gparted htop k4dirstat network-manager-openvpn-gnome openssh-server openvpn smartmontools systemd-coredump tree xclip xsel
+sudo apt install -y aptitude curl gnome-tweak-tool gparted htop k4dirstat network-manager-openvpn-gnome openssh-server openvpn smartmontools systemd-coredump tree xclip xsel
 
 # Video games
 sudo apt install -y pioneers
@@ -32,7 +30,7 @@ sudo apt install -y pioneers
 ## Programming languages/tools
 
 # C++
-sudo apt install -y llvm-7 clang-7 libclang-7-dev libgflags-dev libboost-all-dev
+sudo apt install -y llvm-10 clang-10 libclang-10-dev libgflags-dev libboost-all-dev
 
 # CMake
 sudo apt install -y cmake
@@ -40,7 +38,7 @@ sudo apt install -y cmake
 # qemu
 sudo apt install -y qemu
 
-# rtags
+# ccls
 sudo apt install -y bear
 
 # Meson
@@ -54,6 +52,9 @@ sudo apt install -y python-pip python3-tk
 
 # Tex
 sudo apt install -y texlive latexmk texlive-xetex
+
+# Go
+sudo snap install go --classic
 
 ## Projects and libraries
 

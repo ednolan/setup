@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+sudo add-apt-repository ppa:mozillateam/ppa
+sudo apt-get update
+sudo apt -y install firefox-esr
