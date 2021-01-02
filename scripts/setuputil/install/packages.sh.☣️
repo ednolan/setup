@@ -24,7 +24,7 @@ sudo apt update
 sudo apt install -y google-chrome-stable
 
 # Utilities
-sudo apt install -y curl gnome-tweak-tool gparted htop k4dirstat network-manager-openvpn-gnome openssh-server openvpn systemd-coredump tree xclip xsel
+sudo apt install -y curl gnome-tweak-tool gparted htop k4dirstat network-manager-openvpn-gnome openssh-server openvpn smartmontools systemd-coredump tree xclip xsel
 
 # Video games
 sudo apt install -y pioneers
