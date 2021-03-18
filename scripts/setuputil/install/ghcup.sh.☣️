@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+rm -r "$HOME/.ghcup/bin"
+mkdir -p "$HOME/.ghcup/bin"
+cd "$HOME/.ghcup/bin"
+wget https://downloads.haskell.org/~ghcup/x86_64-linux-ghcup
+mv x86_64-linux-ghcup ghcup
+chmod +x ghcup

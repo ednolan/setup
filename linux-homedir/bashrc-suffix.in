@@ -3,11 +3,13 @@ export EDITOR="nano"
 
 ☣️export GOPATH=$HOME/sync/go
 export PATH="$HOME/.cabal/bin:$PATH"
+export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/localbuild/swift/swift-5.0.1-RELEASE-ubuntu18.04/usr/bin:$PATH"
 ☣️💠export PATH="$HOME/localbuild/tmux/bin:$PATH"
 ☣️💠export PATH="$HOME/localbuild/emacs/bin:$PATH"
 ☣️🍎💠export PATH="$HOME/localbuild/rtags/bin:$PATH"
 💠export PATH="$HOME/localbuild/git/bin:$PATH"
+export PATH="$HOME/stuff/2021-03/neuron:$PATH"
 🍎☣️export PATH="$HOME/sync/swift/emojisplit/.build/debug:$PATH"
 
 ✴️export COLOR_RESET=$(echo -en "\x1b[0m\n") \
