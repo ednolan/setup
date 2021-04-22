@@ -11,9 +11,12 @@ git clone --depth=1 --recursive https://github.com/MaskRay/ccls ~/localbuild/ccl
 
 cd ~/localbuild/ccls/ccls
 
+git fetch --all --tags
+git checkout 0.20210330
+
 cmake -H. -BRelease -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_PREFIX_PATH=/usr/lib/llvm-12 \
-    -DLLVM_INCLUDE_DIR=/usr/lib/llvm-12/include \
-    -DLLVM_BUILD_INCLUDE_DIR=/usr/include/llvm-12/
+    -DCMAKE_PREFIX_PATH=/usr/lib/llvm-11 \
+    -DLLVM_INCLUDE_DIR=/usr/lib/llvm-11/include \
+    -DLLVM_BUILD_INCLUDE_DIR=/usr/include/llvm-11/
 
 cmake --build Release -- -j32

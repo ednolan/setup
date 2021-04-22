@@ -17,7 +17,7 @@ sudo apt install -y aptitude curl gparted emacs htop k4dirstat network-manager-o
 
 # C++
 # TODO
-sudo apt install -y clang-12 libclang-12-dev
+sudo apt install -y clang-11 libclang-11-dev
 
 # CMake
 sudo apt install -y cmake
