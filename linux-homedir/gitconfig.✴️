@@ -12,3 +12,5 @@
 [core]
 [grep]
     lineNumber = true
+[diff]
+    ignoreSubmodules = dirty

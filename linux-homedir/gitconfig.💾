@@ -14,3 +14,5 @@
     sshCommand = ssh -i ~/.ssh/id_ed25519_git
 [grep]
     lineNumber = true
+[diff]
+    ignoreSubmodules = dirty

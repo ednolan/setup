@@ -14,5 +14,7 @@
     sshCommand = ssh -i ~/.ssh/id_rsa_git
 [grep]
     lineNumber = true
+[diff]
+    ignoreSubmodules = dirty
 [gc]
     auto = 0
