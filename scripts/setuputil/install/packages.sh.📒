@@ -11,7 +11,7 @@ sudo apt install -y adwaita-icon-theme adwaita-icon-theme-full
 ## Application software
 
 # Utilities
-sudo apt install -y aptitude curlgparted emacs htop k4dirstat network-manager-openvpn-gnome openssh-server pslist pv smartmontools systemd-coredump tmux tree
+sudo apt install -y aptitude curl gparted emacs htop k4dirstat network-manager-openvpn-gnome openssh-server pslist pv smartmontools systemd-coredump tmux tree
 
 ## Programming languages/tools
 
