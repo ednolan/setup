@@ -17,6 +17,7 @@ sudo apt install -y aptitude curl gparted emacs htop k4dirstat network-manager-o
 
 # C++
 # TODO
+sudo apt install -y clang-12
 
 # CMake
 sudo apt install -y cmake
@@ -29,3 +30,8 @@ sudo apt install -y bear
 
 # Python
 # TODO
+
+# Projects
+
+# Bellport
+sudo apt install -y liblzma-dev libpcap-dev libsystemd-dev

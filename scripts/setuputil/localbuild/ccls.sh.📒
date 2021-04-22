@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -ex
+
+if [[ -d ~/localbuild/ccls ]] ; then
+    rm -rf ~/localbuild/ccls
+fi
+mkdir -p ~/localbuild/ccls
+
+git clone --depth=1 --recursive https://github.com/MaskRay/ccls ~/localbuild/ccls/ccls
+
+cd ~/localbuild/ccls/ccls
+
+cmake -H. -BRelease -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_PREFIX_PATH=/usr/lib/llvm-12 \
+    -DLLVM_INCLUDE_DIR=/usr/lib/llvm-12/include \
+    -DLLVM_BUILD_INCLUDE_DIR=/usr/include/llvm-12/
+
+cmake --build Release -- -j32
