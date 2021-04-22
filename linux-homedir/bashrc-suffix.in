@@ -7,7 +7,6 @@ export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/localbuild/swift/swift-5.0.1-RELEASE-ubuntu18.04/usr/bin:$PATH"
 ☣️💠export PATH="$HOME/localbuild/tmux/bin:$PATH"
 ☣️💠export PATH="$HOME/localbuild/emacs/bin:$PATH"
-☣️🍎💠export PATH="$HOME/localbuild/rtags/bin:$PATH"
 💠export PATH="$HOME/localbuild/git/bin:$PATH"
 export PATH="$HOME/stuff/2021-03/neuron:$PATH"
 🍎☣️export PATH="$HOME/sync/swift/emojisplit/.build/debug:$PATH"
@@ -25,7 +24,7 @@ source ~/sync/setup/bash-powerline/bash-powerline.sh
     *i*) fortune | cowsay ;; # interactive shell
 esac
 
-🍎💠💾🍏👿if [ -f ~/.bash_aliases ]; then
+🍎💠📒💾🍏👿if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
@@ -41,7 +40,7 @@ fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ☣️🍎🍏ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_rsa_git)
 💾👿ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_ed25519_git)
-💠if [[ ! -S /scratch/enolan/ssh_auth_sock ]]; then
+💠📒if [[ ! -S /scratch/enolan/ssh_auth_sock ]]; then
   eval `ssh-agent`
   ln -sf "$SSH_AUTH_SOCK" /scratch/enolan/ssh_auth_sock
 fi

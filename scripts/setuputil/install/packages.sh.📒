@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+## Desktop environment/theme
+
+# Cinnamon
+sudo apt install -y cinnamon-desktop-environment
+
+# Adwaita theme
+sudo apt install -y adwaita-icon-theme adwaita-icon-theme-full
+
+## Application software
+
+# Utilities
+sudo apt install -y aptitude curlgparted emacs htop k4dirstat network-manager-openvpn-gnome openssh-server pslist pv smartmontools systemd-coredump tmux tree
+
+## Programming languages/tools
+
+# C++
+# TODO
+
+# CMake
+sudo apt install -y cmake
+
+# qemu
+sudo apt install -y qemu
+
+# ccls
+sudo apt install -y bear
+
+# Python
+# TODO
