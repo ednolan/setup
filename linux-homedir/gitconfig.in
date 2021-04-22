@@ -12,7 +12,8 @@
     com = checkout master
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [core]
-☣️🍎🍏💠📒    sshCommand = ssh -i ~/.ssh/id_rsa_git
+☣️🍎🍏💠    sshCommand = ssh -i ~/.ssh/id_rsa_git
+📒    sshCommand = ssh -i ~/.ssh/id_rsa_git -oKexAlgorithms=+diffie-hellman-group1-sha1
 💾👿    sshCommand = ssh -i ~/.ssh/id_ed25519_git
 ✴️[grep]
     lineNumber = true
