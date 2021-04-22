@@ -19,5 +19,7 @@
     lineNumber = true
 [diff]
     ignoreSubmodules = dirty
-💠📒[gc]
+💠[gc]
     auto = 0
+📒[gc]
+    pruneExpire = never

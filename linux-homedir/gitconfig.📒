@@ -17,4 +17,4 @@
 [diff]
     ignoreSubmodules = dirty
 [gc]
-    auto = 0
+    pruneExpire = never
