@@ -4,3 +4,9 @@
 function isbinary() {
   LC_MESSAGES=C grep -Hm1 '^' < "${1-$REPLY}" | grep -q '^Binary'
 }
+
+# https://www.stefaanlippens.net/pretty-csv.html
+# TODO: make this work for non-linux
+function pretty_csv {
+    column -t -s, -n "$@" | less -F -S -X -K
+}
