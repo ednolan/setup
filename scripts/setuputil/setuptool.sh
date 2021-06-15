@@ -20,7 +20,14 @@ COMMANDS
     install {packages, go, rust}
 '
 
-declare script_dir=$(dirname $BASH_SOURCE)
+# todo: quote variables
+
+declare script_dir=$(dirname "$BASH_SOURCE")
+if [[ "$?" -ne 0 || -z $(ls -1A "$script_dir/../../bash-util-lib") ]] ; then
+    echo 'Could not load library functions' 1>&2
+    exit 1
+fi
+source "$script_dir/../../bash-util-lib/bash-util-lib-log.sh"
 
 function run_xplatform_scripts ()
 {
@@ -60,8 +67,7 @@ function run_appropriate_script ()
     elif [[ -f $dir/${command}.sh.$emoji ]] ; then
         $dir/${command}.sh.$emoji
     else
-        echo "Missing script for command $command on config $emoji" 2>&1
-        exit 1
+        bash_util_log_fatal "Missing script for command $command on config $emoji"
     fi
 }
 
@@ -128,7 +134,7 @@ function main ()
     done
     local -a commands=("$@")
 
-    [[ -n $emoji ]] || exit 1
+    [[ -n $emoji ]] || bash_util_log_fatal "--emoji not specified"
 
     case ${commands[0]} in
         install_build_deps) echo 'install_build_deps'; install_build_deps $emoji ;;
@@ -136,7 +142,7 @@ function main ()
         localbuild) echo 'localbuild' ${commands[1]} ; localbuild ${commands[1]} $emoji ;;
         configure) echo 'configure' ${commands[1]}; configure ${commands[1]} $emoji ;;
         install) echo 'install'  ${commands[1]}; install ${commands[1]} $emoji ;;
-        *) exit 1 ;;
+        *) bash_util_log_fatal "Unrecognized or unspecified command" ;;
     esac
 }
 
