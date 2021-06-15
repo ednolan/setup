@@ -1,3 +1,6 @@
 [submodule "bash-powerline"]
 	path = bash-powerline
 	url = https://github.com/riobard/bash-powerline.git
+[submodule "bash-util-lib"]
+	path = bash-util-lib
+	url = git@github.com:ednolan/bash-util-lib.git
