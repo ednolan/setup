@@ -1,37 +1,111 @@
 #!/usr/bin/env bash
 
 ## Desktop environment/theme
+function main() {
+    local -a pkgs=()
 
-# Cinnamon
-sudo apt install -y cinnamon-desktop-environment
+    # Cinnamon
+    pkgs+=(cinnamon-desktop-environment)
 
-# Adwaita theme
-sudo apt install -y adwaita-icon-theme adwaita-icon-theme-full
+    # Adwaita theme
+    pkgs+=(adwaita-icon-theme
+           adwaita-icon-theme-full)
 
-## Application software
+    ## Application software
 
-# Utilities
-sudo apt install -y aptitude curl gparted emacs htop k4dirstat network-manager-openvpn-gnome openssh-server pslist pv smartmontools systemd-coredump tmux tree
+    # Utilities
+    pkgs+=(aptitude
+           curl
+           gparted
+           emacs
+           evince
+           htop
+           iftop
+           k4dirstat
+           network-manager-openvpn-gnome
+           nload
+           openssh-server
+           parallel
+           pslist
+           pv
+           ripgrep
+           smartmontools
+           systemd-coredump
+           tigervnc-standalone-server
+           tigervnc-xorg-extension
+           tmux
+           treeunits
+           wireshark
+           xz-utils
+           zstd)
 
-## Programming languages/tools
+    ## Programming languages/tools
 
-# C++
-# TODO
-sudo apt install -y clang-11 libclang-11-dev
+    # Bellport
+    pkgs+=(liblzma-dev
+           libpcap-dev
+           libsystemd-dev)
 
-# CMake
-sudo apt install -y cmake
+    # build
+    pkgs+=(autogen
+           autoconf
+           bear
+           binutils
+           binutils-gold
+           bison
+           build-essential
+           ccache
+           cmake
+           flex
+           ninja-build)
 
-# qemu
-sudo apt install -y qemu
+    # C++
+    pkgs+=(clang
+           clang-11
+           clang-12
+           g++-9
+           gcc-9)
 
-# ccls
-sudo apt install -y bear
 
-# Python
-# TODO
+    # Dremio
+    pkgs+=(thrift-compiler)
 
-# Projects
+    # dev libraries
+    pkgs+=(libboost-all-dev
+           libbz2-dev
+           libc++-11-dev
+           libc++-12-dev
+           libc++abi-11-dev
+           libc++abi-12-dev
+           libclang-11-dev
+           libclang-12-dev
+           libpangox-1.0-0
+           libprotobuf-dev
+           libprotobuf-java
+           libssl-dev
+           libxml2-dev)
 
-# Bellport
-sudo apt install -y liblzma-dev libpcap-dev libsystemd-dev
+    # dev tools
+    pkgs+=(docker
+           git
+           jq
+           linux-tools-common
+           linux-tools-generic
+           qemu)
+
+    # Java
+    pkgs+=(maven
+           openjdk-8-jre)
+
+    # python
+    pkgs+=(ipython3
+           python-setuptools
+           python3-pip
+           python3-venv
+           virtualenv)
+
+    # ruby
+    pkgs+=(ruby-full)
+}
+
+main "$@"
