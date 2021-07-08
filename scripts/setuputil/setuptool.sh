@@ -136,13 +136,15 @@ function main ()
 
     [[ -n $emoji ]] || bash_util_log_fatal "--emoji not specified"
 
+    [[ "${#commands[@]}" -gt 0 ]] || bash_util_log_fatal "command not specified"
+
     case ${commands[0]} in
         install_build_deps) echo 'install_build_deps'; install_build_deps $emoji ;;
         localbuild_all) echo 'localbuild_init'; localbuild_all $emoji ;;
         localbuild) echo 'localbuild' ${commands[1]} ; localbuild ${commands[1]} $emoji ;;
         configure) echo 'configure' ${commands[1]}; configure ${commands[1]} $emoji ;;
         install) echo 'install'  ${commands[1]}; install ${commands[1]} $emoji ;;
-        *) bash_util_log_fatal "Unrecognized or unspecified command" ;;
+        *) bash_util_log_fatal "Unrecognized command" ;;
     esac
 }
 

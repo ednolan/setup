@@ -1,0 +1,28 @@
+# -*- mode: sh; sh-shell: bash; -*-
+export EDITOR="nano"
+
+export PATH="$HOME/localbuild/emacs/bin:$PATH"
+export COLOR_RESET=$(echo -en "\x1b[0m\n") \
+export COLOR_CWD=$(printf '\[\x1b[38;2;0;0;255m\]')
+export COLOR_GIT=$(printf '\[\x1b[38;2;0;102;255m\]')
+export COLOR_SUCCESS=$(printf '\[\x1b[38;2;3;106;7m\]')
+export COLOR_FAILURE=$(printf '\[\x1b[38;2;197;6;11m\]')
+export SYMBOL_GIT_BRANCH='→'
+
+source ~/sync/setup/bash-powerline/bash-powerline.sh
+
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
+fi
+
+ if [ -f ~/.bash_functions ]; then
+    source ~/.bash_functions
+fi
+
+# https://unix.stackexchange.com/a/217223
+if [[ ! -S /scratch/local/enolan/ssh_auth_sock ]]; then
+  eval `ssh-agent`
+  ln -sf "$SSH_AUTH_SOCK" /scratch/local/enolan/ssh_auth_sock
+fi
+export SSH_AUTH_SOCK=/scratch/local/enolan/ssh_auth_sock
+ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_rsa_git)
