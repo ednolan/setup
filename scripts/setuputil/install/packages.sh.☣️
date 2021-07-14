@@ -11,7 +11,7 @@ sudo apt install -y adwaita-icon-theme adwaita-icon-theme-full
 ## Application software
 
 # Audio
-sudo apt install -y audacity pianobooster
+sudo apt install -y pianobooster
 
 # Browsers
 
