@@ -69,3 +69,6 @@ sudo apt install -y libasound-dev libfftw3-dev
 
 # Desmond
 sudo apt install -y libgtkmm-3.0-dev libsndfile1-dev uuid-dev
+
+# labeldb
+sudo apt install -y libgd-dev
