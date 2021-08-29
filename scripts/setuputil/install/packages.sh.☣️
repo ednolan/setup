@@ -71,4 +71,4 @@ sudo apt install -y libasound-dev libfftw3-dev
 sudo apt install -y libgtkmm-3.0-dev libsndfile1-dev uuid-dev
 
 # labeldb
-sudo apt install -y libgd-dev
+sudo apt install -y libgd-dev libusb-1.0-0-dev
