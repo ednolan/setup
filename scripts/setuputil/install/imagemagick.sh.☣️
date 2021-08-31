@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+set -x
+
+if [[ -d ~/install/imei ]] ; then
+    rm -rf ~/install/imei
+fi
+mkdir -p ~/install/imei
+
+git clone https://github.com/SoftCreatR/imei ~/install/imei/imei
+
+cd ~/install/imei/imei
+
+chmod +x imei.sh
+
+sudo ./imei.sh
