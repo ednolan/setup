@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# https://nmap.org/book/inst-source.html
+
+set -ex
+
+if [[ -d ~/localbuild/nmap ]] ; then
+    rm -rf ~/localbuild/nmap
+fi
+mkdir -p ~/localbuild/nmap
+
+git clone --recursive https://github.com/nmap/nmap.git ~/localbuild/nmap/nmap
+
+cd ~/localbuild/nmap/nmap
+
+./configure --prefix=$(realpath ~/localbuild/nmap)
+
+make -j40 && make install
