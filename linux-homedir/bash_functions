@@ -10,3 +10,8 @@ function isbinary() {
 function pretty_csv {
     column -t -s, -n "$@" | less -F -S -X -K
 }
+
+# https://superuser.com/a/150131
+function ppid () {
+    ps -p ${1:-$$} -o ppid=;
+}
