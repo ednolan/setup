@@ -2,8 +2,6 @@
 
 # Opam
 opam init
-opam switch create 4.08.1
+opam switch create 4.13.1+flambda+no-flat-float-array+fp --package=ocaml-variants.4.13.1+options,ocaml-option-flambda,ocaml-option-no-flat-float-array,ocaml-option-fp
 eval `opam config env`
-
-# Semio
-opam install tuareg merlin ocp-indent menhir ppx_sexp_conv ppx_compare ppx_custom_printf ppx_enumerate core ocamlgraph dune
+opam install tuareg merlin ocp-indent menhir core ocamlgraph dune async
