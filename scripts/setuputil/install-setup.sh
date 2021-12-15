@@ -26,7 +26,8 @@ case "$emoji" in
        ${script_dir}/setuptool.sh --emoji ☣️ install ocaml ;
        ${script_dir}/setuptool.sh --emoji ☣️ configure ocaml ;
        ${script_dir}/setuptool.sh --emoji ☣️ install rust ;
-       ${script_dir}/setuptool.sh --emoji ☣️ install spack ;;
+       ${script_dir}/setuptool.sh --emoji ☣️ install spack ;
+       ${script_dir}/setuptool.sh --emoji ☣️ install yarn ;;
     🍏) ${script_dir}/setuptool.sh --emoji 🍏 configure dotfiles ;
        ${script_dir}/setuptool.sh --emoji 🍏 configure emacs ;
        ${script_dir}/setuptool.sh --emoji 🍏 install packages ;;
