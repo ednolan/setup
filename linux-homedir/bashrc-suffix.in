@@ -32,7 +32,7 @@ fi
     source ~/.bash_functions
 fi
 
-☣️📒source "$HOME/.cargo/env"
+☣️📒🍎source "$HOME/.cargo/env"
 
 ✴️# https://unix.stackexchange.com/a/217223
 ☣️🍎🍏💾👿📒if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then
