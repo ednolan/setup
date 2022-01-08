@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# Utilities
 sudo apt install -y \
      aptitude \
+     build-essential \
      curl \
      emacs-nox \
      htop \
