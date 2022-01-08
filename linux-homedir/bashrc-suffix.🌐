@@ -1,6 +1,7 @@
 # -*- mode: sh; sh-shell: bash; -*-
 export EDITOR="nano"
 
+export GOPATH=$HOME/sync/go
 export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
 
 export COLOR_RESET=$(echo -en "\x1b[0m\n") \
@@ -11,10 +12,6 @@ export COLOR_FAILURE=$(printf '\[\x1b[38;2;197;6;11m\]')
 export SYMBOL_GIT_BRANCH='→'
 
 source ~/sync/setup/bash-powerline/bash-powerline.sh
-
-if [ -f ~/.bash_aliases ]; then
-    source ~/.bash_aliases
-fi
 
  if [ -f ~/.bash_functions ]; then
     source ~/.bash_functions
@@ -28,4 +25,4 @@ if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then
   ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
-ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_rsa_git)
+ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_ed25519_git)

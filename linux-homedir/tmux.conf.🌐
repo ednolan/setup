@@ -13,11 +13,9 @@ set -g status-bg colour251
 # Various fixes for editor
 set-option -g xterm-keys on
 
-🍎🍏💠👿💾set -g default-terminal "xterm-256color"
-set-option -ga terminal-overrides "xterm-256color:Tc"
-☣️📒🔶🌐set -g default-terminal "tmux-256color"
+set -g default-terminal "tmux-256color"
 set-option -ga terminal-overrides "tmux-256color:Tc"
-✴️
+
 
 # make sure sessions are alphabetical
 bind s choose-tree -s -O name

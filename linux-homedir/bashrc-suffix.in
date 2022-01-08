@@ -1,8 +1,8 @@
 # -*- mode: sh; sh-shell: bash; -*-
 export EDITOR="nano"
 
-☣️export GOPATH=$HOME/sync/go
-export PATH="$HOME/.cabal/bin:$PATH"
+☣️🌐export GOPATH=$HOME/sync/go
+☣️ export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/localbuild/swift/swift-5.0.1-RELEASE-ubuntu18.04/usr/bin:$PATH"
 export PATH="$HOME/localbin/docker-credential-pass/:$PATH"
@@ -10,7 +10,7 @@ export PATH="$HOME/localbin/docker-credential-pass/:$PATH"
 ☣️💠🔶export PATH="$HOME/localbuild/emacs/bin:$PATH"
 💠export PATH="$HOME/localbuild/git/bin:$PATH"
 export PATH="$HOME/stuff/2021-03/neuron:$PATH"
-🍎☣️export PATH="$HOME/sync/swift/emojisplit/.build/debug:$PATH"
+🍎☣️🌐📒export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
 
 ✴️export COLOR_RESET=$(echo -en "\x1b[0m\n") \
 export COLOR_CWD=$(printf '\[\x1b[38;2;0;0;255m\]')
@@ -33,16 +33,16 @@ fi
     source ~/.bash_functions
 fi
 
-☣️📒🍎source "$HOME/.cargo/env"
+☣️📒🍎🌐source "$HOME/.cargo/env"
 
 ✴️# https://unix.stackexchange.com/a/217223
-☣️🍎🍏💾👿📒if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then
+☣️🍎🍏💾👿📒🌐if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then
   eval `ssh-agent`
   ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ☣️🍎🍏📒ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_rsa_git)
-💾👿ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_ed25519_git)
+💾👿🌐ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_ed25519_git)
 💠if [[ ! -S /scratch/enolan/ssh_auth_sock ]]; then
   eval `ssh-agent`
   ln -sf "$SSH_AUTH_SOCK" /scratch/enolan/ssh_auth_sock
