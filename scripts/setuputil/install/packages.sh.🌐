@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Utilities
+sudo apt install -y \
+     aptitude \
+     curl \
+     emacs-nox \
+     htop \
+     nload \
+     openssh-server \
+     openvpn \
+     pass \
+     pslist \
+     pv \
+     systemd-coredump \
+     tmux \
+     tree

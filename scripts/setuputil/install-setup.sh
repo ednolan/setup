@@ -47,5 +47,9 @@ case "$emoji" in
     👿) ${script_dir}/setuptool.sh --emoji 👿 configure dotfiles ;
        ${script_dir}/setuptool.sh --emoji 👿 configure emacs ;
        ${script_dir}/setuptool.sh --emoji 👿 install packages ;;
+    🌐) ${script_dir}/setuptool.sh --emoji 🌐 configure dotfiles ;
+       ${script_dir}/setuptool.sh --emoji 🌐 configure emacs ;
+       ${script_dir}/setuptool.sh --emoji 🌐 install packages ;
+       ${script_dir}/setuptool.sh --emoji 🌐 install rust ;;
     *) exit 1 ;;
 esac
