@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Utilities
 sudo apt install -y \
      aptitude \
      build-essential \
@@ -15,3 +16,11 @@ sudo apt install -y \
      systemd-coredump \
      tmux \
      tree
+
+# Minecraft
+sudo apt install \
+     nmap \
+     openjdk-17-jdk \
+     openjdk-17-jre \
+     screen \
+     wget
