@@ -21,10 +21,6 @@ export SYMBOL_GIT_BRANCH='→'
 
 source ~/sync/setup/bash-powerline/bash-powerline.sh
 
-🍎case "$-" in
-    *i*) fortune | cowsay ;; # interactive shell
-esac
-
 🍎💠🔶📒💾🍏👿if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
