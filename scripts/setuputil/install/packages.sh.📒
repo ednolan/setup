@@ -16,9 +16,9 @@ function main() {
     # Utilities
     pkgs+=(aptitude
            curl
-           gparted
            emacs
            evince
+           gparted
            htop
            iftop
            k4dirstat
@@ -26,10 +26,13 @@ function main() {
            nload
            openssh-server
            parallel
+           pcregrep
            pslist
            pv
            ripgrep
+           rlwrap
            smartmontools
+           socat
            systemd-coredump
            tigervnc-standalone-server
            tigervnc-xorg-extension
@@ -63,9 +66,9 @@ function main() {
     pkgs+=(clang
            clang-11
            clang-12
+           clang-13
            g++-9
            gcc-9)
-
 
     # Dremio
     pkgs+=(thrift-compiler)
@@ -96,6 +99,9 @@ function main() {
     # Java
     pkgs+=(maven
            openjdk-8-jre)
+
+    # MDX
+    pkgs+=(mysql-server)
 
     # python
     pkgs+=(ipython3
