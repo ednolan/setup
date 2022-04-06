@@ -96,6 +96,9 @@ function main() {
            linux-tools-generic
            qemu)
 
+    # emacs
+    pkgs+=(gnutls-bin libgccjit-11-dev)
+
     # Java
     pkgs+=(maven
            openjdk-8-jre)
