@@ -1,6 +1,9 @@
 # -*- mode: sh; sh-shell: bash; -*-
 export EDITOR="nano"
 
+# https://unix.stackexchange.com/a/27591
+export IGNOREEOF=1
+
 ☣️🌐export GOPATH=$HOME/sync/go
 ☣️ export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"

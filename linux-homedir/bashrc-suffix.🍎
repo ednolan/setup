@@ -1,6 +1,9 @@
 # -*- mode: sh; sh-shell: bash; -*-
 export EDITOR="nano"
 
+# https://unix.stackexchange.com/a/27591
+export IGNOREEOF=1
+
 export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
 
 export COLOR_RESET=$(echo -en "\x1b[0m\n") \

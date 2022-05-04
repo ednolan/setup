@@ -1,6 +1,9 @@
 # -*- mode: sh; sh-shell: bash; -*-
 export EDITOR="nano"
 
+# https://unix.stackexchange.com/a/27591
+export IGNOREEOF=1
+
 export COLOR_RESET=$(echo -en "\x1b[0m\n") \
 export COLOR_CWD=$(printf '\[\x1b[38;2;0;0;255m\]')
 export COLOR_GIT=$(printf '\[\x1b[38;2;0;102;255m\]')
