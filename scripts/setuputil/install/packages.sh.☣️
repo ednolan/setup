@@ -10,6 +10,9 @@ sudo apt install -y adwaita-icon-theme adwaita-icon-theme-full
 
 ## Application software
 
+# 1password
+sudo apt install -y 1password
+
 # Audio
 sudo apt install -y pianobooster
 
