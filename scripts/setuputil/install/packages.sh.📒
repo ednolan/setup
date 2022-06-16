@@ -18,6 +18,7 @@ function main() {
            curl
            emacs
            evince
+           fzf
            gparted
            htop
            iftop
