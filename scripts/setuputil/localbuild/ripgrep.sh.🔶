@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -ex
+
+if [[ -d ~/localbuild/ripgrep ]] ; then
+    rm -rf ~/localbuild/ripgrep
+fi
+mkdir -p ~/localbuild/ripgrep
+
+git clone https://github.com/BurntSushi/ripgrep ~/localbuild/ripgrep/ripgrep
+
+cd ~/localbuild/ripgrep/ripgrep
+
+cargo build --release

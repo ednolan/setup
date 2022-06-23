@@ -13,7 +13,8 @@ export PATH="$HOME/localbin/docker-credential-pass/:$PATH"
 ☣️💠🔶📒export PATH="$HOME/localbuild/emacs/bin:$PATH"
 💠export PATH="$HOME/localbuild/git/bin:$PATH"
 export PATH="$HOME/stuff/2021-03/neuron:$PATH"
-🍎☣️🌐📒export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
+🔶export PATH="$HOME/localbuild/ripgrep/ripgrep/target/release:$PATH"
+🍎☣️🌐📒🔶export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
 
 ✴️export COLOR_RESET=$(echo -en "\x1b[0m\n") \
 export COLOR_CWD=$(printf '\[\x1b[38;2;0;0;255m\]')
