@@ -34,6 +34,10 @@ set -g mouse on
 bind-key j command-prompt -p "join pane from:"  "join-pane -h -s '%%'"
 bind-key b command-prompt -p "send pane to:"  "break-pane -t '%%'"
 
+# https://waylonwalker.com/tmux-nav-2021/
+# switch sessions using fzf
+bind-key h new-window -n "session-switcher" "tmux list-sessions | sed -E 's/:.*$//' | grep -v \"^$(tmux display-message -p '#S')\$\" | fzf --reverse | xargs tmux switch-client -t"
+
 # fix default mouse drag
 unbind -T copy-mode MouseDragEnd1Pane
 
