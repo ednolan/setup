@@ -58,7 +58,7 @@ sudo apt install -y tigervnc-standalone-server
 ## Programming languages/tools
 
 # C++
-sudo apt install -y llvm-10 clang-10 libclang-10-dev libgflags-dev libboost-all-dev
+sudo apt install -y clang g++ libboost-all-dev libc++-dev libclang-dev libgflags-dev
 
 # CMake
 sudo apt install -y cmake
