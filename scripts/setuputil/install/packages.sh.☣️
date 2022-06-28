@@ -32,6 +32,7 @@ sudo apt install -y gnutls-bin libgccjit-11-dev
 sudo apt install -y \
      aptitude \
      curl \
+     fzf \
      gnome-tweak-tool \
      gparted \
      htop \
