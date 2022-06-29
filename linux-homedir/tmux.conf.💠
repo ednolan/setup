@@ -36,9 +36,3 @@ bind-key b command-prompt -p "send pane to:"  "break-pane -t '%%'"
 
 # fix default mouse drag
 unbind -T copy-mode MouseDragEnd1Pane
-
-# Plugins
-set -g @plugin 'tmux-plugins/tpm'
-set -g @plugin 'tmux-plugins/tmux-resurrect'
-set -g @plugin 'tmux-plugins/tmux-yank'
-run ~/.tmux/plugins/tpm/tpm
