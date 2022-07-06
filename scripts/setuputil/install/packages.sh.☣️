@@ -102,4 +102,4 @@ sudo apt install -y libgd-dev libusb-1.0-0-dev libcairo2-dev libpango1.0-dev pyt
 ## Localbuild dependencies
 
 # Mosh
-sudo apt install -y automake libtool g++ protobuf-compiler libprotobuf-dev libboost-dev libutempter-dev libncurses5-dev zlib1g-dev libio-pty-perl libssl-dev pkg-config
+sudo apt install -y automake libtool g++ protobuf-compiler libprotobuf-dev libutempter-dev libncurses5-dev zlib1g-dev libio-pty-perl libssl-dev pkg-config
