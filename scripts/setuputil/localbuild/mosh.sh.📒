@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ -d ~/localbuild/mosh ]] ; then
+    rm -rf ~/localbuild/mosh
+fi
+mkdir -p ~/localbuild/mosh
+
+git clone https://github.com/mobile-shell/mosh.git ~/localbuild/mosh/mosh
+cd ~/localbuild/mosh/mosh
+mkdir -p ~/localbuild/mosh/prefix
+
+./autogen.sh
+./configure --prefix=$(realpath ~/localbuild/mosh/prefix)
+make
+make install

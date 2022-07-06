@@ -116,6 +116,21 @@ function main() {
 
     # ruby
     pkgs+=(ruby-full)
+
+    ## Localbuild dependencies
+
+    # mosh
+    pkgs+=(automake
+           libtool
+           g++
+           protobuf-compiler
+           libprotobuf-dev
+           libutempter-dev
+           libncurses5-dev
+           zlib1g-dev
+           libio-pty-perl
+           libssl-dev
+           pkg-config)
 }
 
 main "$@"
