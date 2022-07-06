@@ -6,4 +6,6 @@ if [[ ! -d ~/.emacs.d ]] ; then
 else
     git -C ~/.emacs.d pull
 fi
+git -C ~/.emacs.d submodule sync
+git -C ~/.emacs.d submodule update --init
 cp ~/.emacs.d/init.el.$emoji ~/.emacs.d/init.el
