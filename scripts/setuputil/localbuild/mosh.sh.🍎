@@ -12,7 +12,6 @@ cd ~/localbuild/mosh/mosh
 mkdir -p ~/localbuild/mosh/prefix
 
 brew install protobuf
-brew install boost
 brew install pkg-config
 brew install automake
 
