@@ -98,3 +98,8 @@ sudo apt install -y libgtkmm-3.0-dev libsndfile1-dev uuid-dev
 
 # labeldb
 sudo apt install -y libgd-dev libusb-1.0-0-dev libcairo2-dev libpango1.0-dev python-gtk2 nginx
+
+## Localbuild dependencies
+
+# Mosh
+sudo apt install -y automake libtool g++ protobuf-compiler libprotobuf-dev libboost-dev libutempter-dev libncurses5-dev zlib1g-dev libio-pty-perl libssl-dev pkg-config
