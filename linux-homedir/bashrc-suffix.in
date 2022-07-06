@@ -16,8 +16,9 @@ export PATH="$HOME/stuff/2021-03/neuron:$PATH"
 🔶export PATH="$HOME/localbuild/ripgrep/ripgrep/target/release:$PATH"
 export PATH="$HOME/localbin/fzf:$PATH"
 🍎☣️🌐📒🔶export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
-
-✴️export COLOR_RESET=$(echo -en "\x1b[0m\n") \
+🍎export PATH="$HOME/localbuild/mosh/prefix/bin:$PATH"
+✴️
+export COLOR_RESET=$(echo -en "\x1b[0m\n") \
 export COLOR_CWD=$(printf '\[\x1b[38;2;0;0;255m\]')
 export COLOR_GIT=$(printf '\[\x1b[38;2;0;102;255m\]')
 export COLOR_SUCCESS=$(printf '\[\x1b[38;2;3;106;7m\]')
