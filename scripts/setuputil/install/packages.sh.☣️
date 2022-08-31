@@ -44,6 +44,7 @@ sudo apt install -y \
      pass \
      pslist \
      pv \
+     shellcheck \
      smartmontools \
      systemd-coredump \
      tree \
@@ -59,7 +60,14 @@ sudo apt install -y tigervnc-standalone-server
 ## Programming languages/tools
 
 # C++
-sudo apt install -y clang g++ libboost-all-dev libc++-dev libclang-dev libgflags-dev
+sudo apt install -y \
+     clang \
+     g++ \
+     libboost-all-dev \
+     libc++-dev \
+     libclang-dev \
+     libgflags-dev \
+     clang-format-14
 
 # CMake
 sudo apt install -y cmake
