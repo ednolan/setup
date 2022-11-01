@@ -17,6 +17,7 @@ export PATH="$HOME/localbin/fzf:$PATH"
 🍎☣️🌐📒🔶export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
 🍎☣️📒export PATH="$HOME/localbuild/mosh/prefix/bin:$PATH"
 🍎export PATH="/usr/local/opt/llvm/bin:$PATH"
+📒export PATH="$HOME/localbuild/valgrind/prefix/bin:$PATH"
 ✴️
 export COLOR_RESET=$(echo -en "\x1b[0m\n") \
 export COLOR_CWD=$(printf '\[\x1b[38;2;0;0;255m\]')

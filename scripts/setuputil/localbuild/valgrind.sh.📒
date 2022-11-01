@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ -d ~/localbuild/valgrind ]] ; then
+    rm -rf ~/localbuild/valgrind
+fi
+mkdir -p ~/localbuild/valgrind
+
+git clone https://sourceware.org/git/valgrind.git ~/localbuild/valgrind/valgrind
+cd ~/localbuild/valgrind/valgrind
+git checkout VALGRIND_3_20_0
+mkdir -p ~/localbuild/valgrind/prefix
+
+./autogen.sh
+./configure --prefix=$(realpath ~/localbuild/valgrind/prefix)
+make -j$(nproc)
+make install
