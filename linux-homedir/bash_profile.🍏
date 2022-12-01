@@ -1,6 +1,7 @@
 # -*- mode: sh; sh-shell: bash; -*-
 [ -r ~/.bashrc ] && . ~/.bashrc
 
-export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/opt/gnu-getopt/bin:$PATH"
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
