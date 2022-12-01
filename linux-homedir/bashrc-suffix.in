@@ -44,8 +44,8 @@ fi
   ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
-☣️🍎🍏📒ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_rsa_git)
-💾👿🌐ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_ed25519_git)
+☣️🍎📒ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_rsa_git)
+💾👿🌐🍏ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_ed25519_git)
 💠if [[ ! -S /scratch/enolan/ssh_auth_sock ]]; then
   eval `ssh-agent`
   ln -sf "$SSH_AUTH_SOCK" /scratch/enolan/ssh_auth_sock
