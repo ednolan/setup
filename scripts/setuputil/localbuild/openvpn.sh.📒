@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ -d ~/localbuild/openvpn ]] ; then
+    rm -rf ~/localbuild/openvpn
+fi
+mkdir -p ~/localbuild/openvpn
+cd ~/localbuild/openvpn
+wget https://swupdate.openvpn.org/community/releases/openvpn-2.5.3.tar.xz
+tar xf openvpn-2.5.3.tar.xz
+cd openvpn-2.5.3
+./configure --prefix ~/localbuild/openvpn
+make
+make install
