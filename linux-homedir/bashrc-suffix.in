@@ -9,9 +9,7 @@ export IGNOREEOF=1
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/localbuild/swift/swift-5.0.1-RELEASE-ubuntu18.04/usr/bin:$PATH"
 export PATH="$HOME/localbin/docker-credential-pass/:$PATH"
-☣️💠🔶📒export PATH="$HOME/localbuild/emacs/bin:$PATH"
-💠export PATH="$HOME/localbuild/git/bin:$PATH"
-export PATH="$HOME/stuff/2021-03/neuron:$PATH"
+☣️🔶📒export PATH="$HOME/localbuild/emacs/bin:$PATH"
 🔶export PATH="$HOME/localbuild/ripgrep/ripgrep/target/release:$PATH"
 export PATH="$HOME/localbin/fzf:$PATH"
 🍎☣️🌐📒🔶export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
@@ -28,7 +26,7 @@ export SYMBOL_GIT_BRANCH='→'
 
 source ~/sync/setup/bash-powerline/bash-powerline.sh
 
-🍎💠🔶📒💾🍏👿if [ -f ~/.bash_aliases ]; then
+🍎🔶📒💾🍏👿if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
@@ -46,12 +44,6 @@ fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ☣️🍎📒ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_rsa_git)
 💾👿🌐🍏ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_ed25519_git)
-💠if [[ ! -S /scratch/enolan/ssh_auth_sock ]]; then
-  eval `ssh-agent`
-  ln -sf "$SSH_AUTH_SOCK" /scratch/enolan/ssh_auth_sock
-fi
-export SSH_AUTH_SOCK=/scratch/enolan/ssh_auth_sock
-ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_rsa_git)
 🔶if [[ ! -S /scratch/local/enolan/ssh_auth_sock ]]; then
   eval `ssh-agent`
   ln -sf "$SSH_AUTH_SOCK" /scratch/local/enolan/ssh_auth_sock

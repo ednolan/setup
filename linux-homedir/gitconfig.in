@@ -1,7 +1,7 @@
 [user]
     name = Edward Nolan
 ☣️🍎💾👿🌐    email = eddiejnolan@gmail.com
-🍏💠🔶📒    email = enolan@maystreet.com
+🍏🔶📒    email = enolan@maystreet.com
 ✴️[alias]
     co = checkout
     ci = commit
@@ -12,7 +12,7 @@
     com = checkout master
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [core]
-🍎💠    sshCommand = ssh -i ~/.ssh/id_rsa_git
+🍎    sshCommand = ssh -i ~/.ssh/id_rsa_git
 🍏    sshCommand = ssh -i ~/.ssh/id_ed25519_git
 🔶    sshCommand = ssh -i ~/.ssh/id_rsa_git -oKexAlgorithms=+diffie-hellman-group1-sha1
 📒☣️# https://unix.stackexchange.com/a/700895
@@ -22,7 +22,5 @@
     lineNumber = true
 [diff]
     ignoreSubmodules = dirty
-💠[gc]
-    auto = 0
 📒🔶[gc]
     pruneExpire = never
