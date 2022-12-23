@@ -48,8 +48,9 @@ case "$emoji" in
        ${script_dir}/setuptool.sh --emoji 👿 configure emacs ;
        ${script_dir}/setuptool.sh --emoji 👿 install packages ;;
     🌐) ${script_dir}/setuptool.sh --emoji 🌐 configure dotfiles ;
-       ${script_dir}/setuptool.sh --emoji 🌐 configure emacs ;
        ${script_dir}/setuptool.sh --emoji 🌐 install packages ;
+       ${script_dir}/setuptool.sh --emoji 🌐 localbuild emacs ;
+       ${script_dir}/setuptool.sh --emoji 🌐 configure emacs ;
        ${script_dir}/setuptool.sh --emoji 🌐 install rust ;
        ${script_dir}/setuptool.sh --emoji 🌐 localbuild emojisplit ;
        ${script_dir}/setuptool.sh --emoji 🌐 install caddy ;;
