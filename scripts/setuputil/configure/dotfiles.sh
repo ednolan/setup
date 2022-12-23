@@ -13,12 +13,12 @@ else
     sed -i '/##### custom suffix follows/,$d' ~/.bashrc
 fi
 echo '##### custom suffix follows' >> ~/.bashrc
-cat $script_dir/../../../linux-homedir/bashrc-suffix.$emoji >> ~/.bashrc
-if [[ -f $script_dir/../../../linux-homedir/bash_profile.$emoji ]] ; then
-    cp $script_dir/../../../linux-homedir/bash_profile.$emoji ~/.bash_profile
+cat $script_dir/../../../homedir/bashrc-suffix.$emoji >> ~/.bashrc
+if [[ -f $script_dir/../../../homedir/bash_profile.$emoji ]] ; then
+    cp $script_dir/../../../homedir/bash_profile.$emoji ~/.bash_profile
 fi
-cp $script_dir/../../../linux-homedir/bash_aliases.$emoji ~/.bash_aliases
-cp $script_dir/../../../linux-homedir/bash_functions ~/.bash_functions
-cp $script_dir/../../../linux-homedir/gitconfig.$emoji ~/.gitconfig
-cp $script_dir/../../../linux-homedir/tmux.conf.$emoji ~/.tmux.conf
-cp -r $script_dir/../../../linux-homedir/config/. ~/.config
+cp $script_dir/../../../homedir/bash_aliases.$emoji ~/.bash_aliases
+cp $script_dir/../../../homedir/bash_functions ~/.bash_functions
+cp $script_dir/../../../homedir/gitconfig.$emoji ~/.gitconfig
+cp $script_dir/../../../homedir/tmux.conf.$emoji ~/.tmux.conf
+cp -r $script_dir/../../../homedir/config/. ~/.config
