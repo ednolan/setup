@@ -3,8 +3,7 @@
 alias ll="ls -lhA"
 
 # New emacs with colors etc
-☣️📒alias coloremacs="COLORTERM=truecolor emacs -nw"
-🔶🌐alias coloremacs="TERM=xterm-24bits emacs -nw"
+☣️📒🔶🌐alias coloremacs="COLORTERM=truecolor emacs -nw"
 🍎🍏alias coloremacs="COLORTERM=truecolor /Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 ✴️
 # This ulimit command is annoying
