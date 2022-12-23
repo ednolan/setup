@@ -4,3 +4,6 @@
 [submodule "bash-util-lib"]
 	path = bash-util-lib
 	url = git@github.com:ednolan/bash-util-lib.git
+[submodule "scripts/emojissh"]
+	path = scripts/emojissh
+	url = git@gitlab.com:ednolan/emojissh.git
