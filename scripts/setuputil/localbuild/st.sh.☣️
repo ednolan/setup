@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ -d ~/localbuild/st ]] ; then
+    rm -rf ~/localbuild/st
+fi
+mkdir -p ~/localbuild/st
+
+git clone git://git.suckless.org/st ~/localbuild/st/st
+cd ~/localbuild/st/st
+mkdir -p ~/localbuild/st/prefix
+
+patch --input - ~/localbuild/st/st/config.mk <<EOF
+7c7
+< PREFIX = /usr/local
+---
+> PREFIX = $HOME/localbuild/st/prefix
+EOF
+
+make
+
+patch --input - ~/localbuild/st/st/config.h <<EOF
+8c8
+< static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+---
+> static char *font = "SF Mono:size=10:antialias=true:autohint=true";
+48c48
+< int allowwindowops = 0;
+---
+> int allowwindowops = 1;
+123,124c123,124
+< 	"gray90", /* default foreground colour */
+< 	"black", /* default background colour */
+---
+> 	"black", /* default foreground colour */
+> 	"white", /* default background colour */
+EOF
+
+make clean install
