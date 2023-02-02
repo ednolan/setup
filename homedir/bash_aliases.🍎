@@ -4,6 +4,8 @@ alias ll="ls -lhA"
 
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 
+alias copy="$HOME/sync/setup/scripts/clipetty_wrapper.sh"
+
 # From github.com/jez/dotfiles
 # so much easier to type than `cd ..`
 alias cdd="cd .."

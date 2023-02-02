@@ -2,6 +2,8 @@
 # A verbose, human readable ls
 alias ll="ls -lhA"
 
+alias copy="$HOME/sync/setup/scripts/clipetty_wrapper.sh"
+
 # From github.com/jez/dotfiles
 # so much easier to type than `cd ..`
 alias cdd="cd .."
