@@ -21,12 +21,6 @@ export SYMBOL_GIT_BRANCH='→'
 
 source ~/sync/setup/bash-powerline/bash-powerline.sh
 
-# for atuin
-[[ -f $HOME/sync/setup/bash-preexec/bash-preexec.sh ]] && \
-    source $HOME/sync/setup/bash-preexec/bash-preexec.sh
-
-eval "$(atuin init bash --disable-up-arrow)"
-
 if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
@@ -36,6 +30,13 @@ fi
 fi
 
 source "$HOME/.cargo/env"
+
+# for atuin
+[[ -f $HOME/sync/setup/bash-preexec/bash-preexec.sh ]] && \
+    source $HOME/sync/setup/bash-preexec/bash-preexec.sh
+
+eval "$(atuin init bash --disable-up-arrow)"
+
 export CPM_SOURCE_CACHE="$HOME/.cache/CPM"
 
 # https://unix.stackexchange.com/a/217223

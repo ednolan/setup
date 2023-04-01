@@ -26,6 +26,13 @@ fi
 fi
 
 source "$HOME/.cargo/env"
+
+# for atuin
+[[ -f $HOME/sync/setup/bash-preexec/bash-preexec.sh ]] && \
+    source $HOME/sync/setup/bash-preexec/bash-preexec.sh
+
+eval "$(atuin init bash --disable-up-arrow)"
+
 # https://unix.stackexchange.com/a/217223
 if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then
   eval `ssh-agent`

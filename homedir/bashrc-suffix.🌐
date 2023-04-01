@@ -19,17 +19,18 @@ export SYMBOL_GIT_BRANCH='→'
 
 source ~/sync/setup/bash-powerline/bash-powerline.sh
 
+ if [ -f ~/.bash_functions ]; then
+    source ~/.bash_functions
+fi
+
+source "$HOME/.cargo/env"
+
 # for atuin
 [[ -f $HOME/sync/setup/bash-preexec/bash-preexec.sh ]] && \
     source $HOME/sync/setup/bash-preexec/bash-preexec.sh
 
 eval "$(atuin init bash --disable-up-arrow)"
 
- if [ -f ~/.bash_functions ]; then
-    source ~/.bash_functions
-fi
-
-source "$HOME/.cargo/env"
 # https://unix.stackexchange.com/a/217223
 if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then
   eval `ssh-agent`
