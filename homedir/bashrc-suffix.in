@@ -29,7 +29,7 @@ export SYMBOL_GIT_BRANCH='→'
 
 source ~/sync/setup/bash-powerline/bash-powerline.sh
 
-🌐📒# for atuin
+☣️🌐📒🍎🔶# for atuin
 [[ -f $HOME/sync/setup/bash-preexec/bash-preexec.sh ]] && \
     source $HOME/sync/setup/bash-preexec/bash-preexec.sh
 
