@@ -7,3 +7,6 @@
 [submodule "scripts/emojissh"]
 	path = scripts/emojissh
 	url = git@gitlab.com:ednolan/emojissh.git
+[submodule "bash-preexec"]
+	path = bash-preexec
+	url = https://github.com/rcaloras/bash-preexec.git
