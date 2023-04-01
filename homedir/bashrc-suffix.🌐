@@ -19,6 +19,12 @@ export SYMBOL_GIT_BRANCH='→'
 
 source ~/sync/setup/bash-powerline/bash-powerline.sh
 
+# for atuin
+[[ -f $HOME/sync/setup/bash-preexec/bash-preexec.sh ]] && \
+    source $HOME/sync/setup/bash-preexec/bash-preexec.sh
+
+eval "$(atuin init bash --disable-up-arrow)"
+
  if [ -f ~/.bash_functions ]; then
     source ~/.bash_functions
 fi
