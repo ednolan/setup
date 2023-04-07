@@ -16,5 +16,3 @@
     lineNumber = true
 [diff]
     ignoreSubmodules = dirty
-[gc]
-    pruneExpire = never
