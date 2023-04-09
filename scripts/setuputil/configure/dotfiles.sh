@@ -22,3 +22,4 @@ cp $script_dir/../../../homedir/bash_functions ~/.bash_functions
 cp $script_dir/../../../homedir/gitconfig.$emoji ~/.gitconfig
 cp $script_dir/../../../homedir/tmux.conf.$emoji ~/.tmux.conf
 cp -r $script_dir/../../../homedir/config/. ~/.config
+cp -r $script_dir/../../../homedir/.ocp/. ~/.ocp
