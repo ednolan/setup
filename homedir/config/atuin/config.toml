@@ -2,3 +2,5 @@ auto_sync=true
 sync_address="http://www.ednolan.com:8888"
 search_mode="fuzzy"
 style="compact"
+show_preview=true
+inline_height=25
