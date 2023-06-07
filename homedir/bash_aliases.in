@@ -2,7 +2,7 @@
 # A verbose, human readable ls
 alias ll="ls -lhA"
 
-🍎🍏alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+🍎🍏💿alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 
 ☣️🔶📒🌐# This ulimit command is annoying
 alias coredumps="ulimit -S -c unlimited"
