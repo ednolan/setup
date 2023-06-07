@@ -13,11 +13,9 @@ set -g status-bg colour251
 # Various fixes for editor
 set-option -g xterm-keys on
 
-👿💾set -g default-terminal "xterm-256color"
-set-option -ga terminal-overrides "xterm-256color:Tc"
-☣️📒🔶🌐🍎🍏💿set -g default-terminal "tmux-256color"
+set -g default-terminal "tmux-256color"
 set-option -ga terminal-overrides "tmux-256color:Tc"
-✴️
+
 
 # make sure sessions are alphabetical
 bind s choose-tree -s -O name
@@ -36,11 +34,11 @@ set -g mouse on
 bind-key j command-prompt -p "join pane from:"  "join-pane -h -s '%%' -t 1"
 bind-key b command-prompt -p "send pane to:"  "break-pane -t '%%'"
 
-☣️🍎🍏💿📒🔶🌐# https://waylonwalker.com/tmux-nav-2021/#prefixc-j
+# https://waylonwalker.com/tmux-nav-2021/#prefixc-j
 # switch sessions using fzf
 bind-key h new-window -n "session-switcher" "tmux list-sessions | sed -E 's/:.*$//' | grep -v \"^$(tmux display-message -p '#S')\$\" | fzf --reverse | xargs tmux switch-client -t"
 
-✴️# fix default mouse drag
+# fix default mouse drag
 unbind -T copy-mode MouseDragEnd1Pane
 
 set -g status-right-length 60
