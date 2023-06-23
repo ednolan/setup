@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ -d ~/localbuild/jq ]] ; then
+    rm -rf ~/localbuild/jq
+fi
+mkdir -p ~/localbuild/jq
+
+git clone --recursive https://github.com/jqlang/jq.git ~/localbuild/jq/jq
+cd ~/localbuild/jq/jq
+mkdir -p ~/localbuild/jq/prefix
+
+autoreconf -fi              # if building from git
+./configure --prefix=$(realpath ~/localbuild/jq/prefix) --with-oniguruma=builtin
+make -j32
+make check
+make install
