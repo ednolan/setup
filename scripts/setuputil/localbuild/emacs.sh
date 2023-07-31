@@ -5,18 +5,18 @@ if [[ -d ~/localbuild/emacs ]] ; then
 fi
 mkdir -p ~/localbuild/emacs
 cd ~/localbuild/emacs
-wget https://ftpmirror.gnu.org/emacs/emacs-28.1.tar.xz
-tar xf emacs-28.1.tar.xz
-cd emacs-28.1
+wget https://ftpmirror.gnu.org/emacs/emacs-29.1.tar.xz
+tar xf emacs-29.1.tar.xz
+cd emacs-29.1
 ./configure \
     --prefix ~/localbuild/emacs \
     --with-x-toolkit=no \
-    --with-native-compilation \
+    --with-native-compilation=aot \
     --with-xpm=ifavailable \
     --with-jpeg=ifavailable \
     --with-png=ifavailable \
     --with-gif=ifavailable \
     --with-tiff=ifavailable \
     --with-gnutls=ifavailable
-make -j8
+make -j32
 make install
