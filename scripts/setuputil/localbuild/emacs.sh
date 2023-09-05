@@ -8,10 +8,12 @@ cd ~/localbuild/emacs
 wget https://ftpmirror.gnu.org/emacs/emacs-29.1.tar.xz
 tar xf emacs-29.1.tar.xz
 cd emacs-29.1
+
+    # --with-native-compilation=aot \
+
 ./configure \
     --prefix ~/localbuild/emacs \
     --with-x-toolkit=no \
-    --with-native-compilation=aot \
     --with-xpm=ifavailable \
     --with-jpeg=ifavailable \
     --with-png=ifavailable \
