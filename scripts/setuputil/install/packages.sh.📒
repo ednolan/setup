@@ -131,6 +131,8 @@ function main() {
            libio-pty-perl
            libssl-dev
            pkg-config)
+
+    sudo apt install -y "${pkgs[@]}"
 }
 
 main "$@"
