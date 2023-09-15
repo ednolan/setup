@@ -4,5 +4,5 @@ set -euo pipefail
 
 sudo apt install -y \
      libffi7 libgcc-s1 libgmp10 liblz4-1 liblzo2-2 liblzo2-dev libmariadb3 libpcap0.8 \
-     libssl1.1 zlib1g bridge-utils net-tools libsasl2-2 iproute2 sqlite3 libsqlite3-0 \
+     libssl3 zlib1g bridge-utils net-tools libsasl2-2 iproute2 sqlite3 libsqlite3-0 \
      iptables python-pkg-resources python3-netaddr libpam-dev openvpn-systemd-resolved
