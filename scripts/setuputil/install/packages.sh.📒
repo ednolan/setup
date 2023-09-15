@@ -65,11 +65,9 @@ function main() {
 
     # C++
     pkgs+=(clang
-           clang-11
-           clang-12
-           clang-13
-           g++-9
-           gcc-9)
+           clang-15
+           g++-12
+           gcc-12)
 
     # Dremio
     pkgs+=(thrift-compiler)
@@ -77,13 +75,9 @@ function main() {
     # dev libraries
     pkgs+=(libboost-all-dev
            libbz2-dev
-           libc++-11-dev
-           libc++-12-dev
-           libc++abi-11-dev
-           libc++abi-12-dev
-           libclang-11-dev
-           libclang-12-dev
-           libpangox-1.0-0
+           libc++-15-dev
+           libc++abi-15-dev
+           libclang-15-dev
            libprotobuf-dev
            libprotobuf-java
            libssl-dev
