@@ -38,7 +38,6 @@ function main() {
            tigervnc-standalone-server
            tigervnc-xorg-extension
            tmux
-           treeunits
            wireshark
            xz-utils
            zstd)
