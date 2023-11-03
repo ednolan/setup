@@ -7,7 +7,7 @@ export IGNOREEOF=1
 # https://www.gnu.org/software/emacs/manual/html_node/efaq/Colors-on-a-TTY.html
 export COLORTERM=truecolor
 
-☣️🌐export GOPATH=$HOME/sync/go
+📒export PATH=$PATH:/usr/local/go/bin
 ☣️export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/localbuild/swift/swift-5.0.1-RELEASE-ubuntu18.04/usr/bin:$PATH"
