@@ -36,7 +36,7 @@ bind-key b command-prompt -p "send pane to:"  "break-pane -t '%%'"
 unbind -T copy-mode MouseDragEnd1Pane
 
 set -g status-right-length 60
-set -g status-right " \"#{=22:pane_title}\"  %a %b %e %l:%M %p"
+set -g status-right " #(whoami)@#(hostname)  %a %b %e %l:%M %p"
 
 # https://github.com/spudlyo/clipetty#dealing-with-a-stale-ssh_tty-environment-variable
 set -ag update-environment "SSH_TTY"
