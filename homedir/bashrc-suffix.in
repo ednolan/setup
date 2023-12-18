@@ -8,6 +8,7 @@ export IGNOREEOF=1
 export COLORTERM=truecolor
 
 📒export PATH=$PATH:/usr/local/go/bin
+export PATH="$PATH:$HOME/go/bin"
 ☣️export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/localbuild/swift/swift-5.0.1-RELEASE-ubuntu18.04/usr/bin:$PATH"
