@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 export XDG_CACHE_HOME=/tmp/$(whoami)
-exec clangd-16 "$@"
+exec clangd-17 "$@"
