@@ -23,6 +23,7 @@ export PATH="$HOME/localbin/fzf:$PATH"
 📒export PATH="$HOME/localbuild/valgrind/prefix/bin:$PATH"
 📒export PATH="$HOME/localbuild/tmux/bin:$PATH"
 📒export PATH="$HOME/localbuild/jq/prefix/bin:$PATH"
+☣️📒export PATH="$HOME/localbuild/cmake/bin:$PATH"
 ✴️
 export COLOR_RESET=$(echo -en "\x1b[0m\n") \
 export COLOR_CWD=$(printf '\[\x1b[38;2;0;0;255m\]')
