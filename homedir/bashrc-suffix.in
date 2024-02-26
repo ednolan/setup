@@ -34,7 +34,7 @@ export SYMBOL_GIT_BRANCH='→'
 
 source ~/sync/setup/bash-powerline/bash-powerline.sh
 
-🍎💿🔶🍏👿if [ -f ~/.bash_aliases ]; then
+🍎💿🔶🍏if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
@@ -53,7 +53,7 @@ eval "$(atuin init bash --disable-up-arrow)"
 📒export CPM_SOURCE_CACHE="$HOME/.cache/CPM"
 
 ✴️# https://unix.stackexchange.com/a/217223
-☣️🍎🍏💿💾👿📒🌐if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then
+☣️🍎🍏💿💾📒🌐if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then
   eval `ssh-agent`
   ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
 fi

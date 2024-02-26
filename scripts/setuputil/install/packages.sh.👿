@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-sudo pkg install curl emacs getopt git htop nano rsync tmux tree wget
