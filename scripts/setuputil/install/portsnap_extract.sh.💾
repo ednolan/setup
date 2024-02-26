@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-sudo portsnap fetch
-sudo portsnap extract
-sudo portsnap update
