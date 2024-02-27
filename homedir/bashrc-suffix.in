@@ -42,7 +42,7 @@ fi
     source ~/.bash_functions
 fi
 
-☣️📒🍎🔶🍏🌐source "$HOME/.cargo/env"
+☣️📒🍎🔶🍏🌐💾source "$HOME/.cargo/env"
 
 # for atuin
 [[ -f $HOME/sync/setup/bash-preexec/bash-preexec.sh ]] && \
