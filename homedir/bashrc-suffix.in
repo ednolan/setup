@@ -7,8 +7,12 @@ export IGNOREEOF=1
 # https://www.gnu.org/software/emacs/manual/html_node/efaq/Colors-on-a-TTY.html
 export COLORTERM=truecolor
 
-📒export PATH=$PATH:/usr/local/go/bin
-export PATH="$PATH:$HOME/go/bin"
+📒export PATH="/usr/local/go/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/localbuild/valgrind/prefix/bin:$PATH"
+export PATH="$HOME/localbuild/tmux/bin:$PATH"
+export PATH="$HOME/localbuild/jq/prefix/bin:$PATH"
+export PATH="$HOME/localbin/jira/bin:$PATH"
 ☣️export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/localbuild/swift/swift-5.0.1-RELEASE-ubuntu18.04/usr/bin:$PATH"
@@ -20,10 +24,9 @@ export PATH="$HOME/localbin/fzf:$PATH"
 🍎💿☣️🌐📒🔶export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
 🍎☣️📒export PATH="$HOME/localbuild/mosh/prefix/bin:$PATH"
 🍎export PATH="/usr/local/opt/llvm/bin:$PATH"
-📒export PATH="$HOME/localbuild/valgrind/prefix/bin:$PATH"
-📒export PATH="$HOME/localbuild/tmux/bin:$PATH"
-📒export PATH="$HOME/localbuild/jq/prefix/bin:$PATH"
 ☣️📒export PATH="$HOME/localbuild/cmake/bin:$PATH"
+📒export JIRA_AUTH_TYPE=bearer
+export JIRA_API_TOKEN=$(pass jira/pat)
 ✴️
 export COLOR_RESET=$(echo -en "\x1b[0m\n") \
 export COLOR_CWD=$(printf '\[\x1b[38;2;0;0;255m\]')

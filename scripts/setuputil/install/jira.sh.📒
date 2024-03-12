@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -ex
+
+if [[ -d ~/localbin/jira ]] ; then
+    rm -rf ~/localbin/jira
+fi
+mkdir -p ~/localbin/jira
+
+cd ~/localbin/jira
+
+wget https://github.com/ankitpokhrel/jira-cli/releases/download/v1.5.1/jira_1.5.1_linux_x86_64.tar.gz
+
+tar --strip-components=1 -xf ./jira_1.5.1_linux_x86_64.tar.gz
+
+rm ./jira_1.5.1_linux_x86_64.tar.gz
