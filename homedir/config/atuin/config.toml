@@ -4,3 +4,5 @@ search_mode="fuzzy"
 style="compact"
 show_preview=true
 inline_height=25
+[sync]
+records = true

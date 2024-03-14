@@ -5,3 +5,5 @@ style="compact"
 show_preview=true
 inline_height=25
 db_path="/scratch/local/enolan/atuin_db/history.db"
+[sync]
+records = true
