@@ -7,9 +7,9 @@ if [[ -d ~/localbuild/openvpn ]] ; then
 fi
 mkdir -p ~/localbuild/openvpn
 cd ~/localbuild/openvpn
-wget https://swupdate.openvpn.org/community/releases/openvpn-2.5.3.tar.xz
-tar xf openvpn-2.5.3.tar.xz
-cd openvpn-2.5.3
+wget https://github.com/OpenVPN/openvpn/releases/download/v2.5.10/openvpn-2.5.10.tar.gz
+tar xf openvpn-2.5.10.tar.gz
+cd openvpn-2.5.10
 ./configure --prefix ~/localbuild/openvpn
 make
 make install
