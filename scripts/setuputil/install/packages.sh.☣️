@@ -37,6 +37,7 @@ sudo apt install -y \
      gparted \
      htop \
      k4dirstat \
+     libtree \
      network-manager-openvpn-gnome \
      nload \
      openssh-server \

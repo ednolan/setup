@@ -23,6 +23,7 @@ function main() {
            htop
            iftop
            k4dirstat
+           libtree
            network-manager-openvpn-gnome
            nload
            openssh-server
