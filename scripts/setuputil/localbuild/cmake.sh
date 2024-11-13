@@ -13,6 +13,6 @@ cd ~/localbuild/cmake/cmake
 
 git checkout v3.31.0
 
-./bootstrap --prefix=$HOME/localbuild/cmake
+./bootstrap --prefix=$HOME/localbuild/cmake --parallel=$(nproc)
 make -j$(nproc)
 make install
