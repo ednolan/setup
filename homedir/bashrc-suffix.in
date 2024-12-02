@@ -25,8 +25,8 @@ export PATH="$HOME/localbin/fzf:$PATH"
 🍎☣️📒export PATH="$HOME/localbuild/mosh/prefix/bin:$PATH"
 🍎export PATH="/usr/local/opt/llvm/bin:$PATH"
 ☣️📒export PATH="$HOME/localbuild/cmake/bin:$PATH"
-📒export JIRA_AUTH_TYPE=bearer
-export JIRA_API_TOKEN=$(pass jira/pat)
+📒#export JIRA_AUTH_TYPE=bearer
+#export JIRA_API_TOKEN=$(pass jira/pat)
 ✴️
 export COLOR_RESET=$(echo -en "\x1b[0m\n") \
 export COLOR_CWD=$(printf '\[\x1b[38;2;0;0;255m\]')
