@@ -5,9 +5,9 @@ if [[ -d ~/localbuild/emacs ]] ; then
 fi
 mkdir -p ~/localbuild/emacs
 cd ~/localbuild/emacs
-wget https://ftpmirror.gnu.org/emacs/emacs-29.1.tar.xz
-tar xf emacs-29.1.tar.xz
-cd emacs-29.1
+wget https://ftpmirror.gnu.org/emacs/emacs-30.1.tar.xz
+tar xf emacs-30.1.tar.xz
+cd emacs-30.1
 
     # --with-native-compilation=aot \
 
@@ -20,5 +20,5 @@ cd emacs-29.1
     --with-gif=ifavailable \
     --with-tiff=ifavailable \
     --with-gnutls=ifavailable
-make -j32
+make -j$(nproc)
 make install
