@@ -16,5 +16,7 @@
     lineNumber = true
 [diff]
     ignoreSubmodules = dirty
+[merge]
+    stat = false
 [url "ssh://gerrit.corp.maystreet.com:29418/"]
         insteadOf = https://gerrit.corp.maystreet.com/a/

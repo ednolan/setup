@@ -15,3 +15,5 @@
     lineNumber = true
 [diff]
     ignoreSubmodules = dirty
+[merge]
+    stat = false
