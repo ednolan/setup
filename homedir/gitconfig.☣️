@@ -18,3 +18,5 @@
     ignoreSubmodules = dirty
 [merge]
     stat = false
+[init]
+    defaultBranch = main
