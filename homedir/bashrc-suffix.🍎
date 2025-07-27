@@ -9,7 +9,8 @@ export COLORTERM=truecolor
 
 export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
 export PATH="$HOME/localbuild/mosh/prefix/bin:$PATH"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export COLOR_RESET=$(echo -en "\x1b[0m\n") \
 export COLOR_CWD=$(printf '\[\x1b[38;2;0;0;255m\]')
