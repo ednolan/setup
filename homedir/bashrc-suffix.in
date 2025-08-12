@@ -21,7 +21,7 @@ export PATH="$HOME/localbin/docker-credential-pass/:$PATH"
 🔶export PATH="$HOME/localbuild/ripgrep/ripgrep/target/release:$PATH"
 export PATH="$HOME/localbuild/fastmod/fastmod/target/release:$PATH"
 export PATH="$HOME/localbin/fzf:$PATH"
-🍎💿☣️🌐📒🔶export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
+🍎🍏💿☣️🌐📒🔶export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
 🍎☣️📒export PATH="$HOME/localbuild/mosh/prefix/bin:$PATH"
 🍎export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -69,3 +69,7 @@ ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_ed25519_git)
 fi
 export SSH_AUTH_SOCK=/scratch/local/enolan/ssh_auth_sock
 ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_ed25519_git)
+
+🍏if [[ -f ~/aws_aliases.sh ]] ; then
+  source ~/aws_aliases.sh
+fi
