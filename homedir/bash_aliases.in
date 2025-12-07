@@ -3,7 +3,8 @@
 alias ll="ls -lhA"
 
 🍎🍏💿alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
-alias tac="tail -r"
+🍎🍏alias google-chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+✴️alias tac="tail -r"
 
 ☣️🔶📒🌐# This ulimit command is annoying
 alias coredumps="ulimit -S -c unlimited"

@@ -2,6 +2,8 @@
 # A verbose, human readable ls
 alias ll="ls -lhA"
 
+alias tac="tail -r"
+
 # This ulimit command is annoying
 alias coredumps="ulimit -S -c unlimited"
 

@@ -3,6 +3,7 @@
 alias ll="ls -lhA"
 
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+alias google-chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias tac="tail -r"
 
 alias copy="$HOME/sync/setup/scripts/clipetty_wrapper.sh"

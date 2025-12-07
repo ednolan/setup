@@ -2,6 +2,8 @@
 # A verbose, human readable ls
 alias ll="ls -lhA"
 
+alias tac="tail -r"
+
 alias copy="$HOME/sync/setup/scripts/clipetty_wrapper.sh"
 
 # From github.com/jez/dotfiles
