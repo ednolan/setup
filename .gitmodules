@@ -3,10 +3,7 @@
 	url = https://github.com/riobard/bash-powerline.git
 [submodule "bash-util-lib"]
 	path = bash-util-lib
-	url = git@github.com:ednolan/bash-util-lib.git
-[submodule "scripts/emojissh"]
-	path = scripts/emojissh
-	url = git@gitlab.com:ednolan/emojissh.git
+	url = https://github.com/ednolan/bash-util-lib.git
 [submodule "bash-preexec"]
 	path = bash-preexec
 	url = https://github.com/rcaloras/bash-preexec.git
