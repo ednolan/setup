@@ -6,6 +6,8 @@ alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 alias google-chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias tac="tail -r"
 
+alias trellofwd="ssh -L 5001:localhost:5001 -p 3333 eddie@macmini.ednolan.com"
+
 alias copy="$HOME/sync/setup/scripts/clipetty_wrapper.sh"
 
 # From github.com/jez/dotfiles

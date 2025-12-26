@@ -6,6 +6,8 @@ alias ll="ls -lhA"
 🍎🍏alias google-chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 ✴️alias tac="tail -r"
 
+🍎🍏alias trellofwd="ssh -L 5001:localhost:5001 -p 3333 eddie@macmini.ednolan.com"
+
 ☣️🔶📒🌐# This ulimit command is annoying
 alias coredumps="ulimit -S -c unlimited"
 
