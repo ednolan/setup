@@ -11,7 +11,7 @@ git clone https://github.com/tmux/tmux.git ~/localbuild/tmux/tmux
 
 cd ~/localbuild/tmux/tmux
 
-git checkout 0eb5d2545367c4d051861c33452d33f25b427e89
+git checkout cc117b5048f77a4842820f8ebbe3a86e5c077224
 
 sh autogen.sh
 
