@@ -56,6 +56,9 @@ eval "$(atuin init bash --disable-up-arrow)"
 
 📒export CPM_SOURCE_CACHE="$HOME/.cache/CPM"
 
+🔶export LD_PRELOAD=/usr/lib64/proxychains-ng/libproxychains4.so
+export PROXYCHAINS_QUIET_MODE=1
+
 ✴️# https://unix.stackexchange.com/a/217223
 ☣️🍎🍏💿💾📒🌐if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then
   eval `ssh-agent`

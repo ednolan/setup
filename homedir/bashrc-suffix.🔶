@@ -39,6 +39,9 @@ source "$HOME/.cargo/env"
 
 eval "$(atuin init bash --disable-up-arrow)"
 
+export LD_PRELOAD=/usr/lib64/proxychains-ng/libproxychains4.so
+export PROXYCHAINS_QUIET_MODE=1
+
 # https://unix.stackexchange.com/a/217223
 if [[ ! -S /scratch/local/enolan/ssh_auth_sock ]]; then
   eval `ssh-agent`
