@@ -2,7 +2,8 @@
 # A verbose, human readable ls
 alias ll="ls -lhA"
 
-🍎🍏💿alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+🍎💿alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+🍏alias emacs="$HOME/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 🍎🍏alias google-chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 ✴️alias tac="tail -r"
 
