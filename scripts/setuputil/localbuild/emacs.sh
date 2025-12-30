@@ -19,6 +19,6 @@ cd emacs-30.2
     --with-png=ifavailable \
     --with-gif=ifavailable \
     --with-tiff=ifavailable \
-    --with-gnutls=ifavailable
+    --with-gnutls=yes
 make -j$(nproc)
 make install
