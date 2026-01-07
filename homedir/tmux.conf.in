@@ -33,6 +33,8 @@ set -g mouse on
 bind-key j command-prompt -p "join pane from:"  "join-pane -h -s '%%' -t 1"
 bind-key b command-prompt -p "send pane to:"  "break-pane -t '%%'"
 
+set-option -g repeat-time 0
+
 ☣️🍎🍏💿📒🔶🌐💾# https://waylonwalker.com/tmux-nav-2021/#prefixc-j
 # switch sessions using fzf
 bind-key h display-popup -E "tmux list-sessions -F '#{session_activity} #{session_name}' | sort -r | cut -d' ' -f2- | grep -v \"^$(tmux display-message -p '#S')\$\" | fzf --reverse | xargs tmux switch-client -t"

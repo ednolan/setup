@@ -33,6 +33,8 @@ set -g mouse on
 bind-key j command-prompt -p "join pane from:"  "join-pane -h -s '%%' -t 1"
 bind-key b command-prompt -p "send pane to:"  "break-pane -t '%%'"
 
+set-option -g repeat-time 0
+
 # fix default mouse drag
 unbind -T copy-mode MouseDragEnd1Pane
 
