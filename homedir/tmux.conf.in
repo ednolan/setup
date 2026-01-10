@@ -50,3 +50,11 @@ set -ag update-environment "SSH_TTY"
 
 # https://github.com/spudlyo/clipetty/issues/25#issuecomment-1327472790
 set -g allow-passthrough on
+
+set -g @resurrect-capture-pane-contents 'on'
+set -g @resurrect-processes '"~[Ee]macs"'
+
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+
+run '~/.tmux/plugins/tpm/tpm'
