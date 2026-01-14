@@ -9,4 +9,5 @@ mkdir -p ~/localbuild/websocat
 cd ~/localbuild/websocat
 git clone https://github.com/vi/websocat.git
 cd websocat
+git checkout v1.14.1
 cargo build --release --features=ssl
