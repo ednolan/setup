@@ -13,6 +13,7 @@ export PATH="$HOME/localbuild/ripgrep/ripgrep/target/release:$PATH"
 export PATH="$HOME/localbuild/fastmod/fastmod/target/release:$PATH"
 export PATH="$HOME/localbuild/websocat/websocat/target/release:$PATH"
 export PATH="$HOME/localbin/fzf:$PATH"
+export PATH="$HOME/localbin/neuron:$PATH"
 export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
 export PATH="$HOME/localbuild/mosh/prefix/bin:$PATH"
 

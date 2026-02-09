@@ -12,6 +12,8 @@ alias ll="ls -lhA"
 ☣️🔶📒🌐# This ulimit command is annoying
 alias coredumps="ulimit -S -c unlimited"
 
+🔶alias neuron="LD_PRELOAD= neuron"
+
 ✴️alias copy="$HOME/sync/setup/scripts/clipetty_wrapper.sh"
 
 # From github.com/jez/dotfiles

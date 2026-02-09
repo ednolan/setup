@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -ex
+
+if [[ -d ~/localbin/neuron ]] ; then
+    rm -rf ~/localbin/neuron
+fi
+mkdir -p ~/localbin/neuron
+
+cd ~/localbin/neuron
+
+wget https://github.com/srid/neuron/releases/download/1.9.35.0/neuron
+
+chmod +x neuron
+
+
