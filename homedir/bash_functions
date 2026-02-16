@@ -15,3 +15,10 @@ function pretty_csv {
 function ppid () {
     ps -p ${1:-$$} -o ppid=;
 }
+
+function normalize() {
+  local peak=$(ffmpeg -hide_banner -i "$1" -af volumedetect -vn -sn -dn -f null /dev/null 2>&1 | awk -F': ' '/max_volume/ {print $2}' | cut -d' ' -f1)
+  local gain=$(echo "-1.0 - ($peak)" | bc)
+  echo "Detected Peak: $peak dB. Applying Gain: $gain dB..."
+  ffmpeg -i "$1" -af "volume=${gain}dB" -c:a pcm_s24le "${1%.*}_norm.wav"
+}
