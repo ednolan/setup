@@ -28,6 +28,7 @@ export PATH="$HOME/localbin/neuron:$PATH"
 🍎export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 🍎🍏export PATH="/usr/local/bin:$PATH"
+💿export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 ☣️📒export PATH="$HOME/localbuild/cmake/bin:$PATH"
 📒#export JIRA_AUTH_TYPE=bearer
 #export JIRA_API_TOKEN=$(pass jira/pat)
