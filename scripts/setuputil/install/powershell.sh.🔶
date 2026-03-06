@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -ex
+
+if [[ -d ~/localbin/powershell ]] ; then
+    rm -rf ~/localbin/powershell
+fi
+mkdir -p ~/localbin/powershell
+
+cd ~/localbin/powershell
+
+wget https://github.com/PowerShell/PowerShell/releases/download/v7.5.4/powershell-7.5.4-linux-x64.tar.gz
+
+tar xf ./powershell-7.5.4-linux-x64.tar.gz
+
+chmod +x ~/localbin/powershell/pwsh
+
+rm ./powershell-7.5.4-linux-x64.tar.gz
