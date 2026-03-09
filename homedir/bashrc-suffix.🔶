@@ -15,6 +15,7 @@ export PATH="$HOME/localbuild/websocat/websocat/target/release:$PATH"
 export PATH="$HOME/localbin/fzf:$PATH"
 export PATH="$HOME/localbin/neuron:$PATH"
 export PATH="$HOME/localbin/powershell:$PATH"
+export PATH="$HOME/localbin/session-manager-plugin/usr/local/sessionmanagerplugin/bin:$PATH"
 export PATH="$HOME/sync/rust/emojisplit/target/release:$PATH"
 export PATH="$HOME/localbuild/mosh/prefix/bin:$PATH"
 
