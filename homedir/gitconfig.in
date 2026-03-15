@@ -9,7 +9,7 @@
     br = branch
     cv = commit -v
     cav = commit -av
-    com = checkout master
+    com = checkout main
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [core]
     sshCommand = ssh -i ~/.ssh/id_ed25519_git
