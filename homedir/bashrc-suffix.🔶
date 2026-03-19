@@ -43,6 +43,7 @@ source "$HOME/.cargo/env"
     source $HOME/sync/setup/bash-preexec/bash-preexec.sh
 
 eval "$(atuin init bash --disable-up-arrow)"
+eval "$(atuin hex init)"
 
 export LD_PRELOAD=/usr/lib64/proxychains-ng/libproxychains4.so
 export PROXYCHAINS_QUIET_MODE=1

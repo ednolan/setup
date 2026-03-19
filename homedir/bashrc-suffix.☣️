@@ -36,6 +36,7 @@ source "$HOME/.cargo/env"
     source $HOME/sync/setup/bash-preexec/bash-preexec.sh
 
 eval "$(atuin init bash --disable-up-arrow)"
+eval "$(atuin hex init)"
 
 # https://unix.stackexchange.com/a/217223
 if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then

@@ -2,4 +2,4 @@
 
 rustup update
 
-cargo install --git https://github.com/ednolan/atuin.git atuin
+cargo install atuin

@@ -1,9 +1,14 @@
 auto_sync=true
 sync_address="http://www.ednolan.com:8888"
-search_mode="fuzzy"
+search_mode="daemon-fuzzy"
 style="compact"
 show_preview=true
 inline_height=25
 db_path="/scratch/local/enolan/atuin_db/history.db"
 [sync]
 records = true
+[daemon]
+enabled=true
+autostart=true
+[ai]
+enabled=true

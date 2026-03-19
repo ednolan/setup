@@ -59,6 +59,7 @@ fi
     source $HOME/sync/setup/bash-preexec/bash-preexec.sh
 
 eval "$(atuin init bash --disable-up-arrow)"
+eval "$(atuin hex init)"
 
 📒export CPM_SOURCE_CACHE="$HOME/.cache/CPM"
 
