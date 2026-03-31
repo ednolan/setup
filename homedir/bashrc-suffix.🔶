@@ -61,13 +61,13 @@ export SSH_AUTH_SOCK=/scratch/local/enolan/ssh_auth_sock
 ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_ed25519_git)
 
 if command -v gpg >/dev/null 2>&1 && command -v gpg-agent >/dev/null 2>&1 \
-   && gpg --list-keys eddiejnolan@gmail.com >/dev/null 2>&1; then
+   && gpg --list-keys enolan@maystreet.com >/dev/null 2>&1; then
   export GPG_TTY=$(tty)
 
   # Resolve keygrips once, cache in a file
   _gpg_keygrip_cache=~/.gnupg/.keygrips_eddiejnolan
   if [[ ! -f "$_gpg_keygrip_cache" ]]; then
-    gpg --list-keys --with-keygrip eddiejnolan@gmail.com 2>/dev/null \
+    gpg --list-keys --with-keygrip enolan@maystreet.com 2>/dev/null \
       | awk '/\[S\]/{getline; print "sign " $3} /\[E\]/{getline; print "enc " $3}' \
       > "$_gpg_keygrip_cache"
   fi
@@ -81,11 +81,11 @@ if command -v gpg >/dev/null 2>&1 && command -v gpg-agent >/dev/null 2>&1 \
   }
 
   if [[ -n "$_sign_grip" ]] && ! _agent_check "$_sign_grip"; then
-    echo "test" | gpg --local-user eddiejnolan@gmail.com -as -o /dev/null 2>/dev/null
+    echo "test" | gpg --local-user enolan@maystreet.com -as -o /dev/null 2>/dev/null
   fi
 
   if [[ -n "$_enc_grip" ]] && ! _agent_check "$_enc_grip"; then
-    echo "test" | gpg -er eddiejnolan@gmail.com 2>/dev/null | gpg -d -o /dev/null 2>/dev/null
+    echo "test" | gpg -er enolan@maystreet.com 2>/dev/null | gpg -d -o /dev/null 2>/dev/null
   fi
 
   unset _sign_grip _enc_grip _gpg_keygrip_cache
