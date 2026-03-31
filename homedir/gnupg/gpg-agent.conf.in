@@ -1,0 +1,4 @@
+🍎🍏pinentry-program /opt/homebrew/bin/pinentry-curses
+☣️💿🔶💾📒🌐pinentry-program /usr/bin/pinentry-curses
+✴️default-cache-ttl 34560000
+max-cache-ttl 34560000

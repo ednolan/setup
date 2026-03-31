@@ -60,11 +60,11 @@ if command -v gpg >/dev/null 2>&1 && command -v gpg-agent >/dev/null 2>&1 \
   }
 
   if [[ -n "$_sign_grip" ]] && ! _agent_check "$_sign_grip"; then
-    echo "test" | gpg --local-user eddiejnolan@gmail.com -as -o /dev/null
+    echo "test" | gpg --local-user eddiejnolan@gmail.com -as -o /dev/null 2>/dev/null
   fi
 
   if [[ -n "$_enc_grip" ]] && ! _agent_check "$_enc_grip"; then
-    echo "test" | gpg -er eddiejnolan@gmail.com 2>/dev/null | gpg -d -o /dev/null
+    echo "test" | gpg -er eddiejnolan@gmail.com 2>/dev/null | gpg -d -o /dev/null 2>/dev/null
   fi
 
   unset _sign_grip _enc_grip _gpg_keygrip_cache
