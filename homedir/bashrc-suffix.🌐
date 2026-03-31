@@ -46,4 +46,9 @@ if command -v gpg >/dev/null 2>&1 && command -v gpg-agent >/dev/null 2>&1 \
   if ! echo "test" | gpg --batch --pinentry-mode error --local-user eddiejnolan@gmail.com -as -o /dev/null 2>/dev/null; then
     echo "test" | gpg --local-user eddiejnolan@gmail.com -as -o /dev/null
   fi
+  if ! echo "test" | gpg --batch --pinentry-mode error -er eddiejnolan@gmail.com -o /dev/null 2>/dev/null \
+       | gpg --batch --pinentry-mode error -d -o /dev/null 2>/dev/null; then
+    echo "test" | gpg -er eddiejnolan@gmail.com 2>/dev/null \
+       | gpg -d -o /dev/null
+  fi
 fi
