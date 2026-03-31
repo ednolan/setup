@@ -39,3 +39,11 @@ if [[ ! -S ~/.ssh/ssh_auth_sock ]]; then
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_ed25519_git)
+
+if command -v gpg >/dev/null 2>&1 && command -v gpg-agent >/dev/null 2>&1 \
+   && gpg --list-keys eddiejnolan@gmail.com >/dev/null 2>&1; then
+  export GPG_TTY=$(tty)
+  if ! echo "test" | gpg --batch --pinentry-mode error --local-user eddiejnolan@gmail.com -as -o /dev/null 2>/dev/null; then
+    echo "test" | gpg --local-user eddiejnolan@gmail.com -as -o /dev/null
+  fi
+fi

@@ -22,3 +22,11 @@ source ~/sync/setup/bash-powerline/bash-powerline.sh
 fi
 
 # https://unix.stackexchange.com/a/217223
+
+if command -v gpg >/dev/null 2>&1 && command -v gpg-agent >/dev/null 2>&1 \
+   && gpg --list-keys eddiejnolan@gmail.com >/dev/null 2>&1; then
+  export GPG_TTY=$(tty)
+  if ! echo "test" | gpg --batch --pinentry-mode error --local-user eddiejnolan@gmail.com -as -o /dev/null 2>/dev/null; then
+    echo "test" | gpg --local-user eddiejnolan@gmail.com -as -o /dev/null
+  fi
+fi
