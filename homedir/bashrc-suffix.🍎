@@ -50,12 +50,30 @@ ssh-add -l > /dev/null || (ssh-add && ssh-add ~/.ssh/id_ed25519_git)
 if command -v gpg >/dev/null 2>&1 && command -v gpg-agent >/dev/null 2>&1 \
    && gpg --list-keys eddiejnolan@gmail.com >/dev/null 2>&1; then
   export GPG_TTY=$(tty)
-  if ! echo "test" | gpg --batch --pinentry-mode error --local-user eddiejnolan@gmail.com -as -o /dev/null 2>/dev/null; then
+
+  # Resolve keygrips once, cache in a file
+  _gpg_keygrip_cache=~/.gnupg/.keygrips_eddiejnolan
+  if [[ ! -f "$_gpg_keygrip_cache" ]]; then
+    gpg --list-keys --with-keygrip eddiejnolan@gmail.com 2>/dev/null \
+      | awk '/\[S\]/{getline; print "sign " $3} /\[E\]/{getline; print "enc " $3}' \
+      > "$_gpg_keygrip_cache"
+  fi
+
+  _sign_grip=$(awk '/^sign/{print $2}' "$_gpg_keygrip_cache")
+  _enc_grip=$(awk '/^enc/{print $2}' "$_gpg_keygrip_cache")
+
+  # Check agent cache and prompt only for uncached keygrips
+  _agent_check() {
+    gpg-connect-agent "KEYINFO $1" /bye 2>/dev/null | grep -q "KEYINFO $1 D - - 1"
+  }
+
+  if [[ -n "$_sign_grip" ]] && ! _agent_check "$_sign_grip"; then
     echo "test" | gpg --local-user eddiejnolan@gmail.com -as -o /dev/null
   fi
-  if ! echo "test" | gpg --batch --pinentry-mode error -er eddiejnolan@gmail.com -o /dev/null 2>/dev/null \
-       | gpg --batch --pinentry-mode error -d -o /dev/null 2>/dev/null; then
-    echo "test" | gpg -er eddiejnolan@gmail.com 2>/dev/null \
-       | gpg -d -o /dev/null
+
+  if [[ -n "$_enc_grip" ]] && ! _agent_check "$_enc_grip"; then
+    echo "test" | gpg -er eddiejnolan@gmail.com 2>/dev/null | gpg -d -o /dev/null
   fi
+
+  unset _sign_grip _enc_grip _gpg_keygrip_cache
 fi
