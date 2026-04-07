@@ -25,7 +25,6 @@ cp $script_dir/../../../homedir/.gdbinit ~/.gdbinit
 cp -r $script_dir/../../../homedir/config/. ~/.config
 mkdir -p ~/.gnupg
 cp $script_dir/../../../homedir/gnupg/gpg-agent.conf.$emoji ~/.gnupg/gpg-agent.conf
-cp $script_dir/../../../homedir/gnupg/gpg.conf ~/.gnupg/gpg.conf
 if [[ "$emoji" == 🔶 ]] ; then
     cp $script_dir/../../../homedir/config/atuin/config.toml.🔶 ~/.config/atuin/config.toml
 fi

@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+
+set -ex
+
+if [[ -d ~/localbuild/libgpg-error ]] ; then
+    rm -rf ~/localbuild/libgpg-error
+fi
+mkdir -p ~/localbuild/libgpg-error
+cd ~/localbuild/libgpg-error
+wget https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.51.tar.bz2
+tar xf libgpg-error-1.51.tar.bz2
+cd libgpg-error-1.51
+./configure --prefix=$HOME/localbuild/libgpg-error
+make -j$(nproc)
+make install
+ln -s ~/localbuild/libgpg-error/bin/gpgrt-config ~/localbuild/libgpg-error/bin/gpg-error-config
+
+if [[ -d ~/localbuild/libassuan ]] ; then
+    rm -rf ~/localbuild/libassuan
+fi
+mkdir -p ~/localbuild/libassuan
+cd ~/localbuild/libassuan
+wget https://gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2
+tar xf libassuan-3.0.2.tar.bz2
+cd libassuan-3.0.2
+./configure --prefix=$HOME/localbuild/libassuan \
+  --enable-static --with-libgpg-error-prefix=$HOME/localbuild/libgpg-error
+make -j$(nproc)
+make install
+mv ~/localbuild/libassuan/lib/libassuan.so{,.bak}
+mv ~/localbuild/libassuan/lib/libassuan.so.9{,.bak}
+mv ~/localbuild/libassuan/lib/libassuan.so.9.0.2{,.bak}
+
+if [[ -d ~/localbuild/ncurses ]] ; then
+    rm -rf ~/localbuild/ncurses
+fi
+mkdir -p ~/localbuild/ncurses
+cd ~/localbuild/ncurses
+wget https://ftp.gnu.org/gnu/ncurses/ncurses-6.5.tar.gz
+tar xf ncurses-6.5.tar.gz
+cd ncurses-6.5
+./configure --prefix=$HOME/localbuild/ncurses --with-shared --without-debug --enable-widec
+make -j$(nproc)
+make install
+
+if [[ -d ~/localbuild/pinentry ]] ; then
+    rm -rf ~/localbuild/pinentry
+fi
+mkdir -p ~/localbuild/pinentry
+cd ~/localbuild/pinentry
+wget https://gnupg.org/ftp/gcrypt/pinentry/pinentry-1.3.1.tar.bz2
+tar xf pinentry-1.3.1.tar.bz2
+cd pinentry-1.3.1
+./configure --prefix=$HOME/localbuild/pinentry --disable-pinentry-tty --enable-pinentry-curses --disable-pinentry-gtk2 --disable-pinentry-qt --with-libgpg-error-prefix=$HOME/localbuild/libgpg-error --with-libassuan-prefix=$HOME/localbuild/libassuan  CPPFLAGS="-I$HOME/localbuild/ncurses/include -I$HOME/localbuild/ncurses/include/ncursesw" LDFLAGS="-L$HOME/localbuild/ncurses/lib -L$HOME/localbuild/libassuan/lib -l:libassuan.a"
+make -j$(nproc)
+make install
