@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+mkdir -p $HOME/.local/bin
 cat >$HOME/.local/bin/ppass <<EOF
 #!/bin/bash
 (
