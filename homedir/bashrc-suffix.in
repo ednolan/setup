@@ -29,7 +29,7 @@ export PATH="$HOME/localbin/session-manager-plugin/usr/local/sessionmanagerplugi
 🍎☣️📒🔶export PATH="$HOME/localbuild/mosh/prefix/bin:$PATH"
 🍎🍏export PATH="/usr/local/bin:$PATH"
 🍎export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-eval "$(/opt/homebrew/bin/brew shellenv)"
+🍎🍏eval "$(/opt/homebrew/bin/brew shellenv)"
 💿export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 ☣️📒export PATH="$HOME/localbuild/cmake/bin:$PATH"
 📒#export JIRA_AUTH_TYPE=bearer
