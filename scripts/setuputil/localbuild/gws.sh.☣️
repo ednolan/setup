@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -ex
+
+if [[ ! -d ~/localbuild/gws ]] ; then
+    rm -rf ~/localbuild/gws
+fi
+mkdir -p ~/localbuild/gws
+cd ~/localbuild/gws
+wget https://github.com/googleworkspace/cli/releases/download/v0.22.5/google-workspace-cli-x86_64-unknown-linux-gnu.tar.gz
+tar xf google-workspace-cli-x86_64-unknown-linux-gnu.tar.gz
+chmod +x gws
