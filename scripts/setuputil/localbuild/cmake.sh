@@ -11,7 +11,7 @@ git clone https://gitlab.kitware.com/cmake/cmake.git ~/localbuild/cmake/cmake
 
 cd ~/localbuild/cmake/cmake
 
-git checkout v3.31.0
+git checkout v4.3.3
 
 ./bootstrap --prefix=$HOME/localbuild/cmake --parallel=$(nproc)
 make -j$(nproc)
