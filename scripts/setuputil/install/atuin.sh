@@ -2,4 +2,4 @@
 
 rustup update
 
-cargo install atuin
+cargo install --locked atuin
